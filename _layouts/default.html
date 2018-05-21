@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!-- Includes:
+-head.html
+-header.html
+-footer.html (eventually)
+-->
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <!-- header.html file = logo + navbar -->
+     {% include header.html %}
+
+     <main class="page-content" aria-label="Content">
+        {{ content }}
+     </main>
+
+<!--    {% include footer.html %} -->
+
+  </body>
+
+</html>
