@@ -79,6 +79,10 @@ div.project-text {
 
 /* Blog */
 
+ul.post-list {
+  list-style: none;
+}
+
 a.post-link {
   font-family: 'Mukta Mahee', serif;
   text-decoration: none;
