@@ -93,8 +93,8 @@ a.post-link {
 }
 
 a.post-link:hover {
-  text-decoration: underline;
-  background-color: #f3908a;
+  text-decoration: underline #f3908a;
+/*  background-color: #f3908a; */
 }
 
 div.side-panel {
