@@ -28,7 +28,6 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
-  max-width: 900px;
 }
 
 ul.post-list {
