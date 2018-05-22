@@ -1,0 +1,23 @@
+* {
+  display: block;
+  margin: 0 auto;
+  padding: .5em;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  max-width: 1200px;
+}
+
+amid, title, amcolname, resp, name, document_id, publicationstmt, editorialdecl, encodingdate, revdate, controlpgno, sourcecol, copyright, projectdesc {
+  display: none;
+}
+
+p {
+}
+
+hi  {
+  font-style: italic;
+  background-color: #DDF6F5;
+  margin-left: -25px;
+}
