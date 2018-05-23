@@ -6,7 +6,9 @@ categories: algorithms WoL
 ---
 West of Loathing is a computer role playing game by Asymmetric Publications. It has a mystical American Wild West setting, but more importantly it also has very clever, funny writing. That cleverness of the writing also extends into some of the game's puzzles. For example, there's a math puzzle in West of Loathing that looks like this:
 
-The three bolts you can manipulate add different quantities of weight. The first option (the #3 bolt) adds 411 lbs., the second option (the #5 bolt) adds 295 lbs., and the final option (the #7 bolt) adds 161 lbs. If you add up enough weight that it exceeds 3200 lbs. then it resets to zero, and crucially you cannot undo weights you have added nor can you reset to zero on your own. This disincentivizes randomly guessing to try and find a solution because working your way through guesses is very tedious. Instead I tabbed out of the game and wrote a quick script to reach the solution.
+<img src="https://pauljickling.github.io/assets/img/wol.jpg" alt="You see three different-sized bolts on the side of the elevator which are all very loose. There's a sign that says 3200 lbs. pressure required, and some sort of gauge which currently reads 0, whatever that means. [1] Turn the #3 bolt. [2]Turn the #5 bolt. [3] Turn the #7 bolt. [4] Leave it alone for now">
+
+The three bolts you can manipulate add different quantities of weight. The first option (the #3 bolt) adds 411 lbs., the second option (the #5 bolt) adds 295 lbs., and the final option (the #7 bolt) adds 161 lbs. If you add up enough weight that it exceeds 3200 lbs. then it resets to zero, and crucially you cannot undo weights you have added nor can you reset to zero on your own. This is a disincentive to randomly guessing to try and find a solution because working your way through guesses is very tedious. Instead I tabbed out of the game and wrote a quick script to reach the solution.
 
 The first step I take is to figure out what I'm trying to solve. Luckily, that part is straightforward.
 

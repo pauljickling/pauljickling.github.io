@@ -4,6 +4,7 @@ title:  "Dream Stream Evaluation"
 date:   2017-03-29
 categories: node express twitch dota
 ---
+<img src="https://pauljickling.github.io/assets/img/dreap_app1.png" alt="Screenshot of Dream Stream app">
 Dream Stream was the first independent coding project I put together, and it has been a terrific opportunity to learn a lot of different aspects of Node and Javascript. While developing Dream Stream I learned how to:
 
 *    Interact with two separate APIs
