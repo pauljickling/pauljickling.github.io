@@ -3,4 +3,18 @@ layout: page
 title:
 permalink: /about/
 ---
-About page
+<div id="about-grid">
+
+  <div id="about-pic"><img src="https://pauljickling.github.io/assets/img/profile.jpeg" alt="Profile picture"></div>
+
+  <div id="about-text">Paul Jickling is a fullstack developer.</div>
+
+  <div id="about-skills">Languages:<br>
+  Javascript, HTML, CSS<br>
+  Other:<br>
+  Git, jQuery, MongoDB, Jekyll<br>
+  Frameworks:<br>
+  Express, Ember<br>
+  Currently Learning:<br>
+  Python, Django, Rust<br></div>
+</div>

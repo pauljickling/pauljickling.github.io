@@ -41,6 +41,14 @@ ul.post-list {
   max-width: 1400px;
 }
 
+#about-grid {
+  display: grid;
+  grid-gap: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
 /* Navigation */
 
 a.nav {
