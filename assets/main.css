@@ -61,16 +61,20 @@ a.nav {
 }
 
 a.nav:hover {
-  background-color: #f3908a;
+  border-bottom: 5px solid #f3908a;
 }
 
 a.nav:active {
-  background-color: #b31d02;
+  border-bottom: 5px solid #b31d02;
 }
 
 nav {
   display: flex;
   list-style: none;
+}
+
+nav#external {
+  flex-direction: row-reverse;
 }
 
 li.nav {

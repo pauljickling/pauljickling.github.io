@@ -10,11 +10,11 @@ permalink: /about/
   <div id="about-text">Paul Jickling is a fullstack developer.</div>
 
   <div id="about-skills">Languages:<br>
-  Javascript, HTML, CSS<br>
+  Javascript, HTML, CSS<br><br>
   Other:<br>
-  Git, jQuery, MongoDB, Jekyll<br>
+  Git, jQuery, MongoDB, Jekyll<br><br>
   Frameworks:<br>
-  Express, Ember<br>
+  Express, Ember<br><br>
   Currently Learning:<br>
-  Python, Django, Rust<br></div>
+  Python, Django, Rust</div>
 </div>
