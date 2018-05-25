@@ -23,7 +23,7 @@ img {
   grid-gap: 20px;
   margin-left: 40px;
   margin-right: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
 .blog-grid {
