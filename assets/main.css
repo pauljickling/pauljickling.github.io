@@ -20,9 +20,9 @@ img {
 
 .nav-container {
   display: grid;
-  grid-gap: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  grid-gap: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
 }
 
@@ -37,8 +37,8 @@ img {
 ul.post-list {
   display: grid;
   grid-gap: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 5px;
+  margin-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
@@ -71,15 +71,12 @@ a.nav:active {
 nav {
   display: flex;
   list-style: none;
-}
-
-nav#external {
-  flex-direction: row-reverse;
+  margin-left: 30px;
 }
 
 li.nav {
-  padding: 10px;
-  font-size: 24px;
+  padding: 5px;
+  font-size: 18px;
 }
 
 /* Projects */
@@ -105,7 +102,7 @@ a.post-link {
   text-decoration: none;
   color: black;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 a.post-link:hover {
@@ -129,9 +126,7 @@ p.rss-subscribe {
 
 .logo {
   padding: 20px;
-  min-width: 300px;
   line-height: 1.5;
-
 }
 
 .line {
@@ -197,4 +192,41 @@ span#email {
     translateX(10px)
     rotate(2.5deg);
   z-index: 1;
+}
+
+/* Responsive Adjustments */
+
+@media screen and (min-width: 1080px) {
+  .nav-container {
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+  }
+  ul.post-list {
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 400px));
+    max-width: 1400px;
+  }
+  .logo {
+    padding: 20px;
+    min-width: 300px;
+    line-height: 1.5;
+  }
+  li.nav {
+    padding: 10px;
+    font-size: 24px;
+  }
+  nav#external {
+    flex-direction: row-reverse;
+  }
+  a.post-link {
+    font-size: 22px;
+  }
 }
