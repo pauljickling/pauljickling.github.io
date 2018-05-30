@@ -16,6 +16,11 @@ img {
   max-width: 100%;
 }
 
+pre, code {
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
 /* Grids */
 
 .nav-container {
