@@ -11,7 +11,7 @@ When I started to study other languages like Python and Rust I encountered a wid
 
 Maps and sets are what are referred to as *keyed collections*: a collection of elements that contain key-value pairings, and based on the order of insertion it is possible to iterate through the collection. They are kind of like the best of both worlds of objects and arrays, but because the built-in methods are narrower they serve more specialized purposes. One unique feature of keyed collections that makes them distinct from ordinary Javascript objects is the keys don't have to be strings: they could be arrays, objects, numbers, or any other type of data available in Javascript.
 
-##Maps
+<h3>Maps</h3>
 
 So a map is a keyed collection that has key value pairs, and you can iterate through it using a for...of loop. You can declare a new map like this:
 
@@ -30,7 +30,7 @@ locations.has('San Francisco'); // true
 
 It is true that for a simple example like this you could use an object literal for the same goal. But the advantage of maps are you could introduce more complex and/or diverse forms of data without sacrificing the simplicity of the map syntax. For example, you could have arrays containing longitudinal and latitudinal coordinates as keys that identify locations.
 
-##Sets
+<h3>Sets</h3>
 
 Sets are stores of value of any type. The important thing to remember is that they will not store non-unique values.
 
