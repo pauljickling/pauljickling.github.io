@@ -115,10 +115,10 @@ a.post-link {
 }
 
 a.post-link:hover {
-  border-bottom: 5px solid #f3908a;
+  text-decoration: underline #f3908a;
 }
 a.post-link:active {
-  border-bottom: 5px solid #b31d02;
+  text-decoration: underline #b31d02;
 }
 
 div.side-panel {
