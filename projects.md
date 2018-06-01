@@ -6,7 +6,7 @@ permalink: /projects/
 
 <ul class="post-list">
   <li><h2 class="project-title">Code for SF - Project Match</h2>
-  <div class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they would be suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</div>
+  <div class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they are suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</div>
     <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a></div></li>
 
   <li><h2 class="project-title">Dream Stream</h2>
