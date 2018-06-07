@@ -10,11 +10,11 @@ permalink: /about/
   <div id="about-text">Hi, I am a fullstack web developer living in San Francisco. I enjoy developing technologies that keep the web fun, and human-focused.</div>
 
   <div id="about-skills">Languages:<br>
-  Javascript, HTML, CSS<br><br>
+  Javascript, HTML, CSS, Python<br><br>
   Other:<br>
   Git, jQuery, MongoDB, Jekyll<br><br>
   Frameworks:<br>
   Express, Ember<br><br>
   Currently Learning:<br>
-  Python, Django, Rust</div>
+  Django, Rust</div>
 </div>
