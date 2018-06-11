@@ -56,8 +56,7 @@ ul.post-list {
 #about-grid {
   display: grid;
   grid-gap: 40px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 5px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
@@ -211,6 +210,10 @@ span#email {
   .nav-container {
     margin-left: 40px;
     margin-right: 40px;
+  }
+  #about-grid {
+    margin-left: 60px;
+    margin-right: 60px;
   }
   .logo {
     padding: 20px;
