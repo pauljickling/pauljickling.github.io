@@ -125,6 +125,10 @@ div.side-panel {
 
 /* About */
 
+#about-pic {
+  display: none;
+}
+
 /* Misc */
 
 p.rss-subscribe {
@@ -214,6 +218,9 @@ span#email {
   #about-grid {
     margin-left: 60px;
     margin-right: 60px;
+  }
+  #about-pic {
+    display: block;
   }
   .logo {
     padding: 20px;
