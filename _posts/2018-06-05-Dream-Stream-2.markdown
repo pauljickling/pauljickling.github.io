@@ -5,15 +5,15 @@ date: 2018-06-05
 categories: javascript scraping grid handlebars
 ---
 
-Dream Stream 2.0 really is a big shift, and adopts contemporary web design practices.
+Dream Stream 2.0 was a big shift to adopt more contemporary web design practices.
 
-The first version of Dream Stream presented the data in a table with ten rows. If there were more than ten entries in the JSON package it wouldn't render that. By contrast Dream Stream 2.0 uses handlebar helpers on the server to display all relevant entries, and they are displayed as "cards" inside of a CSS grid container.
+The first version of Dream Stream presented data in a table with ten rows. If there were more than ten entries in the JSON package it wouldn't render that. By contrast Dream Stream 2.0 writes a string to JSON on the server that the client renders to display all relevant entries. Also they are displayed as cards inside of a CSS grid container instead of rows in a table.
 
-The interactive elements of Dream Stream 2.0 feature buttons that have the flat design that is associated with contemporary web UI.
+The interactive elements of Dream Stream 2.0 feature buttons that have a more flat design that we associate with the contemporary web.
 
-The majority of the work for Dream Stream 2.0 was server side. The introduction of the qualifying points system to the professional tournament scene was an opportunity to show website visitors skill levels along a different axis. However there were several challenges with the implementation.
+The majority of the work for Dream Stream 2.0 was on the back-end. The introduction of the qualifying points system to the professional tournament scene was an opportunity to show website visitors skill levels along a different axis. However there were several challenges with the implementation.
 
-First was collecting the data. Valve set up a procircuit route on the dota2.com website, but there wasn't an API available to interact with so that meant I needed to scrape the data. I ended up using Puppeteer, Google's headless browser. Although Puppeteer worked great as a scraping tool, it did end up having some unintended consequences when I moved into a production environment. Puppeteer requires a build pack to run on Heroku, and all of its dependencies makes pushing updates significantly slower, enough so that you could go off to make a cup of coffee while you were waiting. Although I don't have any intentions to switch from Puppeteer, it did mean that I had to be a lot more careful about pushing updates because quickly fixing a mistake could be a 10 minute long process where previously it would have been less than a minute.
+The first step was collecting the data. Valve set up a procircuit route on the dota2.com site, but there wasn't an API available to interact with so that meant I needed to scrape the data. I ended up using Puppeteer, Google's headless browser. Although Puppeteer worked great as a scraping tool, it did end up having some unintended consequences when I moved into a production environment. Puppeteer requires a build pack to run on Heroku, and all of its dependencies makes pushing updates significantly slower, enough so that you could go off to make a cup of coffee while you were waiting. Although I don't have any intentions to switch from Puppeteer, it did mean that I had to be a lot more careful about pushing updates because quickly fixing a mistake could be a 10 minute long process where previously it would have been less than a minute.
 
 The greatest challenge though was managing two disparate data sets, and combining them into a single JSON source the client could fetch. The issue was on the one hand I had JSON data that I had retrieved from the Dota 2 leaderboards, and on the other hand I had the JSON data I had written from the scraping tool. Since there would be some overlap entries where players might appear in both JSON packages how should I go about handling that data?
 
