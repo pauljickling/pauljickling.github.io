@@ -14,7 +14,7 @@ permalink: /about/
   Other:<br>
   Git, jQuery, MongoDB, Jekyll<br><br>
   Frameworks:<br>
-  Express, Ember<br><br>
+  Express, Django, Ember<br><br>
   Currently Learning:<br>
-  Django, Rust</div>
+  React, Rust</div>
 </div>
