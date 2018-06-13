@@ -15,6 +15,11 @@ p {
   font-size: 18px;
 }
 
+h1.post-link {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
 img {
   max-width: 100%;
 }
@@ -104,11 +109,8 @@ ul.post-list {
 }
 
 a.post-link {
-  font-family: 'Mukta Mahee', serif;
   text-decoration: none;
   color: black;
-  font-weight: lighter;
-  font-size: 18px;
 }
 
 a.post-link:hover {
