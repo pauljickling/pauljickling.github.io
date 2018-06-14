@@ -5,7 +5,7 @@ date: 2018-06-05
 categories: javascript scraping grid handlebars
 ---
 
-Dream Stream 2.0 was a big shift to adopt more contemporary web design practices.
+Dream Stream 2.0 was a complete rework of both the front-end and back-end of the site. There were three goals I had in mind: to adopt recent web design practices such as using grid containers for layouts and a flattened aesthetic, to integrate and handle additional data sources, and to have the Javascript written in a contemporary style.
 
 The first version of Dream Stream presented data in a table with ten rows. If there were more than ten entries in the JSON package it wouldn't render that. By contrast Dream Stream 2.0 writes a string to JSON on the server that the client renders to display all relevant entries. Also they are displayed as cards inside of a CSS grid container instead of rows in a table.
 

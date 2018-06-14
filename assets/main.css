@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h1.post-link {
@@ -130,6 +130,10 @@ h1.post-title {
   font-size: 22px;
 }
 
+span.post-meta {
+  font-size: 14px;
+}
+
 /* About */
 
 #about-pic {
@@ -182,7 +186,7 @@ span#name {
 }
 
 span#email {
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   left: 20px;
   bottom: 5.5px;
