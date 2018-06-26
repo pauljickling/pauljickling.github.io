@@ -143,7 +143,7 @@ span.post-meta {
 /* Misc */
 
 p.rss-subscribe {
-  margin-left: 40px;
+  margin-left: 45px;
 }
 
 /* Logo */
@@ -223,7 +223,9 @@ span#email {
 
 .animated-boxes {
   display: flex;
-  margin-right: 50px;
+  margin-top: 15px;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 
 .box {
