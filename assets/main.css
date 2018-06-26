@@ -219,6 +219,47 @@ span#email {
   z-index: 1;
 }
 
+/* Footer */
+
+.animated-boxes {
+  display: flex;
+  margin-right: 50px;
+}
+
+.box {
+  width: 75px;
+  height: 75px;
+  animation: groovy 10s infinite linear;
+}
+
+#box1 {
+  background: #F030F5;
+  margin-right: -30px;
+}
+
+#box2 {
+  background: #EFE822;
+}
+
+#box3 {
+  background: #28EAF4;
+  margin-left: -30px;
+}
+
+@keyframes groovy {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.4;
+  }
+}
+
 /* Responsive Adjustments */
 
 @media screen and (min-width: 1080px) {
