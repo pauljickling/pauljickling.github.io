@@ -13,9 +13,9 @@ permalink: /about/
     Languages:<br>
     Javascript, HTML, CSS, Python<br><br>
     Currently Learning:<br>
-    React, Rust, Webpack<br><br>
+    Rust, Webpack<br><br>
     Frameworks:<br>
-    Express, Django, Ember<br><br>
+    React, Express, Django, Ember<br><br>
     Other:<br>
     Git, jQuery, MongoDB, Jekyll
   </div>
