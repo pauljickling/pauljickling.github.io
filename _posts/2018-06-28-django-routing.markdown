@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Setting up routes in Django"
+title: "Setting up Routes in Django"
 date: 2018-06-28
 categories: django express web-frameworks
 ---
