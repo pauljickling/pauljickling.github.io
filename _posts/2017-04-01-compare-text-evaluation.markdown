@@ -2,7 +2,6 @@
 layout: post
 title:  "Compare Text Evaluation"
 date:   2017-04-01
-categories: node
 ---
 
 When I was developing the Dream Stream app I had two copies in separate directories. They were basically identical except one directory was for my GitHub repository and lacked the client ID number necessary to interface with Twitch's API.

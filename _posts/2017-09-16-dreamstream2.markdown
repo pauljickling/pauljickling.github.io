@@ -2,7 +2,6 @@
 layout: post
 title:  "Looking Ahead to Dream Stream 2.0"
 date:   2017-09-16
-categories: dota javascript ruby
 ---
 Yesterday Valve revealed [the format for the professional competitive Dota scene](http://blog.dota2.com/2017/09/the-dota-pro-circuit/) for the coming year. Most significantly, players will now earn points throughout the year by participating in Valve approved tournaments. As next year's International tournament approaches invites to the tournament will be assigned to teams based on the cumulative points acquired by players of those teams.
 

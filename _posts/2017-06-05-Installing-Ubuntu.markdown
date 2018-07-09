@@ -2,7 +2,6 @@
 layout: post
 title:  "Installing Ubuntu"
 date:   2017-06-05
-categories: Linux
 ---
 
 Recently I've been interested in getting better acquainted with Ruby. However my experience by the time I reached Rails territory working in Windows was a miserable experience where nothing worked smoothly. Another recent occurrence was that I was in the market for a new laptop. Most Ruby people I know use Macs, but I've always bristled at the costs of a Macbook, and the reviews I've seen of the latest crop made me feel like I should stay away. So I decided it was time to get acquainted with a Linux OS. Since I'm a novice I decided it might be worth writing up how the installation process went.

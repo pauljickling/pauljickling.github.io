@@ -2,7 +2,6 @@
 layout: post
 title: "Setting up Routes in Django"
 date: 2018-06-28
-categories: django express web-frameworks
 ---
 
 As mentioned in my last post, I'm currently developing an admin component using Django. Django is a highly opinionated (in a good way) framework that has an extremely powerful built-in admin component. As the Django tutorial puts it when it introduces the admin component:

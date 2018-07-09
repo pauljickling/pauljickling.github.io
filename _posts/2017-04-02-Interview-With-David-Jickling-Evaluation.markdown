@@ -2,7 +2,6 @@
 layout: post
 title:  "Interview with David Jickling Evaluation"
 date:   2017-04-02
-categories: xml css
 ---
 
 This was an exercise in making a document more readable relying completely on CSS to manipulate the display (aside from inserting a CSS link of course). The CSS file consists of three parts: manipulations to the entire document, manipulations to XML data that we want to ignore, and manipulations to the `<hi>` tag.

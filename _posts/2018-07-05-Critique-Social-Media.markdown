@@ -2,7 +2,6 @@
 layout: post
 title: "Towards A Critique of Social Media Feeds"
 date: 2018-07-05
-categories: critique social-media
 ---
 
 It's not exactly a secret that there are plenty of people that are sick of Facebook, Twitter, Instagram, etc. Ask why and you will hear any number of reasons:

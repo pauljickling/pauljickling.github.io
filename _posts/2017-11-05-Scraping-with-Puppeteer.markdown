@@ -2,7 +2,6 @@
 layout: post
 title:  "Scraping with Puppeteer"
 date:   2017-11-05
-categories: node headless scraping dom nodelist
 ---
 [Puppeteer](https://github.com/GoogleChrome/puppeteer) is a Node library that provides an API for a headless Chrome browser. A headless browser is a browser with no graphical user interface, which is a useful tool for testing and other sorts of automated tasks you might want to perform, including web scraping. I found the web scraping tools to be very powerful even if the documentation for them is limited at the moment. This was a timely issue as I had been previously considering the question of how I wanted to scrape data off of [the Dota 2 pro circuit page](http://www.dota2.com/procircuit).
 

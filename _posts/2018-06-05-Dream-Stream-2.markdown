@@ -2,7 +2,6 @@
 layout: post
 title: "Dream Stream 2.0"
 date: 2018-06-05
-categories: javascript scraping grid handlebars
 ---
 
 Dream Stream 2.0 was a complete rework of both the front-end and back-end of the site. There were three goals I had in mind: to adopt recent web design practices such as using grid containers for layouts and a flattened aesthetic, to integrate and handle additional data sources, and to have the Javascript written in a contemporary style.

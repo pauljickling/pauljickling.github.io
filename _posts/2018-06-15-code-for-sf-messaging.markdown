@@ -2,7 +2,6 @@
 layout: post
 title: "Developing a Messaging Component for Code for SF"
 date: 2018-06-15
-categories: node mongodb slack messaging
 ---
 
 I have been going to meetups at Code for San Francisco since September. I found myself working with their UX Research group on a web app (tentatively called Project Match) that will help users find projects they are suited for based on their skill set and civic interests. This is something that our team hopes will be useful for every Code for America group because the challenge of new volunteers finding a good fit is a persistent issue in the civic/volunteer tech space.

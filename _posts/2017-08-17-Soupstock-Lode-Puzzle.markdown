@@ -2,7 +2,6 @@
 layout: post
 title: "Solving West of Loathing's Soupstock Lode Puzzle"
 date:   2017-08-17
-categories: algorithms WoL
 ---
 West of Loathing is a computer role playing game by Asymmetric Publications. It has a mystical American Wild West setting, but more importantly it also has very clever, funny writing. That cleverness of the writing also extends into some of the game's puzzles. For example, there's a math puzzle in West of Loathing that looks like this:
 

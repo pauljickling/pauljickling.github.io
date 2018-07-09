@@ -2,7 +2,6 @@
 layout: post
 title:  "Blog Soft Relaunch"
 date:   2018-05-21
-categories: javascript design frameworks jekyll rust
 ---
 
 I took an extended hiatus from blogging because managing a blog on my own with the limited capabilities of the webhost I was working with was proving to be unnecessarily cumbersome. I'm now happily relying on Jekyll and using Github for hosting, and I will be blogging again regularly as a result.

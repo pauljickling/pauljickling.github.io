@@ -2,7 +2,6 @@
 layout: post
 title: "Keyed Collections in Javascript: Maps and Sets"
 date: 2018-05-31
-categories: javascript data-collections
 ---
 
 When you are first learning Javascript the built in objects you typically learn about are objects and arrays, and that's pretty much it. Considering the development history of Javascript, that isn't surprising. Pre-ECMAScript2015 JS was feature sparse relative to other programming languages. And if you were only allowed to have two default objects to contain data at your disposal, arrays and objects are reasonable and excellent choices. Looking things up either via index or key-value pairs are incredibly useful.
