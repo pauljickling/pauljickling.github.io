@@ -119,6 +119,7 @@ ul.post-list {
 a.post-link {
   text-decoration: none;
   color: black;
+  outline: 0;
 }
 
 a.post-link:hover {
