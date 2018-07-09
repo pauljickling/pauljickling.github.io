@@ -104,6 +104,14 @@ div.project-text {
 
 /* Blog */
 
+h2.blog-title {
+  font-family: 'Mukta Mahee', serif;
+  font-weight: lighter;
+  font-size: 22px;
+  color: blue;
+  text-decoration: underline;
+}
+
 ul.post-list {
   list-style: none;
 }
@@ -114,10 +122,12 @@ a.post-link {
 }
 
 a.post-link:hover {
-  text-decoration: underline #f3908a;
+  text-decoration: underline;
+  color: blue;
 }
 a.post-link:active {
-  text-decoration: underline #b31d02;
+  text-decoration: underline;
+  color: blue;
 }
 
 div.side-panel {
