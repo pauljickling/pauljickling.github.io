@@ -7,7 +7,7 @@ permalink: /projects/
 <ul class="post-list">
   <li><h2 class="project-title">Code for SF - Project Match</h2>
   <div class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they are suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</div>
-    <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a></div></li>
+    <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog</a></div></li>
 
   <li><h2 class="project-title">Dream Stream</h2>
   <div class="project-text">Dream Stream is a Node web app that lists players on the DOTA 2 leaderboards currently streaming on Twitch</div>
