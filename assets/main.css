@@ -41,10 +41,10 @@ pre, code {
 
 .blog-grid {
   display: grid;
-  grid-gap: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 500px));
+  grid-gap: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  grid-template-columns: 250px auto;
 }
 
 ul.post-list {
@@ -102,7 +102,7 @@ div.project-text {
   margin-bottom: 10px;
 }
 
-/* Blog */
+/* Blog List i.e. Home layout */
 
 h2.blog-title {
   font-family: 'Mukta Mahee', serif;
@@ -131,11 +131,6 @@ a.post-link:active {
   color: blue;
 }
 
-div.side-panel {
-  display: none;
-  width: 25%;
-}
-
 h1.post-title {
   font-weight: lighter;
   font-size: 22px;
@@ -143,6 +138,12 @@ h1.post-title {
 
 span.post-meta {
   font-size: 14px;
+}
+
+/* Blog Post */
+
+div.side-panel {
+  display: none;
 }
 
 /* About */
@@ -281,6 +282,9 @@ span#email {
     margin-left: 40px;
     margin-right: 40px;
   }
+  div.blog-grid {
+    grid-template-columns: 1fr 3fr;
+  }
   #about-grid {
     margin-left: 60px;
     margin-right: 60px;
@@ -299,6 +303,9 @@ span#email {
   }
   li#external {
     flex-direction: row-reverse;
+  }
+  div.post-content {
+    max-width: 80ch;
   }
   a.post-link {
     font-size: 22px;
