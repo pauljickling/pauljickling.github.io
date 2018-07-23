@@ -12,7 +12,7 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 h1.post-link {
@@ -98,8 +98,12 @@ h2.project-title {
   font-size: 22px;
 }
 
-div.project-text {
+p.project-text {
   margin-bottom: 10px;
+}
+
+li.project {
+  margin-left: -30px;
 }
 
 /* Blog List i.e. Home layout */
@@ -107,7 +111,7 @@ div.project-text {
 h2.blog-title {
   font-family: 'Mukta Mahee', serif;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 20px;
   color: blue;
   text-decoration: underline;
 }
@@ -138,6 +142,10 @@ h1.post-title {
 
 span.post-meta {
   font-size: 14px;
+}
+
+li.posts {
+  margin-left: -30px;
 }
 
 /* Blog Post */
@@ -303,6 +311,12 @@ span#email {
   }
   li#external {
     flex-direction: row-reverse;
+  }
+  li.project {
+    margin-left: 0;
+  }
+  li.posts {
+    margin-left: 0;
   }
   div.post-content {
     max-width: 80ch;
