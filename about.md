@@ -13,10 +13,10 @@ permalink: /about/
     Languages:<br>
     Javascript, HTML, CSS, Python<br><br>
     Currently Learning:<br>
-    Rust, Webpack<br><br>
-    Frameworks:<br>
-    React, Express, Django, Ember<br><br>
+    Rust, SQL<br><br>
+    Libraries/Frameworks:<br>
+    React, Express, Django, Ember, jQuery<br><br>
     Other:<br>
-    Git, jQuery, MongoDB, Jekyll
+    Git, MongoDB, Jekyll
   </div>
 </div>
