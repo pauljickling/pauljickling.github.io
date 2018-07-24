@@ -73,6 +73,16 @@ ul.post-list {
 
 /* Navigation */
 
+nav {
+  display: flex;
+  list-style: none;
+}
+
+li.nav {
+  padding: 5px;
+  font-size: 18px;
+}
+
 a.nav {
   text-decoration: none;
   color: black;
@@ -84,16 +94,6 @@ a.nav:hover {
 
 a.nav:active {
   border-bottom: 5px solid #b31d02;
-}
-
-nav {
-  display: flex;
-  list-style: none;
-}
-
-li.nav {
-  padding: 5px;
-  font-size: 18px;
 }
 
 /* Projects */
@@ -158,6 +158,10 @@ li.posts {
 
 div.side-panel {
   display: none;
+}
+
+article.post {
+  margin-left: 5px;
 }
 
 /* About */
@@ -315,6 +319,7 @@ span#email {
     padding: 10px;
     font-size: 24px;
   }
+
   li#external {
     flex-direction: row-reverse;
   }
@@ -332,5 +337,8 @@ span#email {
   }
   div.side-panel {
     display: block;
+  }
+  article.post {
+    margin-left: -5px;
   }
 }
