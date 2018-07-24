@@ -56,8 +56,6 @@ pre, code {
 ul.post-list {
   display: grid;
   grid-gap: 20px;
-  margin-left: 5px;
-  margin-right: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
   grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
@@ -302,6 +300,12 @@ span#email {
   }
   div.blog-grid {
     grid-template-columns: 1fr 3fr;
+  }
+  ul.post-list {
+    margin-left: 10px;
+  }
+  div.page-content {
+    margin-left: 5px;
   }
   #about-grid {
     margin-left: 60px;
