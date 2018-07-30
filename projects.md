@@ -7,11 +7,15 @@ permalink: /projects/
 <ul class="post-list">
   <li class="project"><h2 class="project-title">Code for SF - Project Match</h2>
   <p class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they are suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</p>
-    <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog</a></div></li>
+  <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog</a></div></li>
 
   <li class="project"><h2 class="project-title">Dream Stream</h2>
   <p class="project-text">Dream Stream is a Node web app that lists players on the DOTA 2 leaderboards currently streaming on Twitch</p>
   <div class="project-links"><a href="https://github.com/pauljickling/Dream-Stream">GitHub</a> - <a href="https://dreamstream.herokuapp.com">Heroku Page</a> - <a href="https://pauljickling.github.io/2017/03/29/Dream-Stream-Evaluation.html">Blog Post</a></div></li>
+
+  <li class="project"><h2 class="project-title">Whiteboard</h2>
+  <p class="project-text">Whiteboard is a Django app that serves a random whiteboard problem for the user to solve. Answers are stored in a database so that the user can review previous answers provided to the problem.</p>
+  <div class="project-links"><a href="https://github.com/pauljickling/whiteboard">GibHub</a> - <a href="https://pauljickling.github.io/2018/07/30/Whiteboard.html">Blog Post</a></div></li>
 
   <li class="project"><h2 class="project-title">Passcode-Gen</h2>
   <p class="project-text">My password manager of choice isn't available on my Linux machine, so I wrote up a customizable password generator for instances when I needed to come up with a new password while using Linux.</p>
