@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "OpenAI and the Future of Humanity"
-date: 2018-07-30
+date: 2018-08-07
 ---
 
 **Warning!** *This post gets into Dota 2, a complex, real-time, multiplayer, strategy game that I have talked about on numerous occasions on this blog, but that I have always avoided getting into the weeds of since the game features a lot of specialist jargon that is impossible for a layperson to follow. Unfortunately for this post I'm going to get into the weeds a little bit, and I won't be explaining all that jargon because that will make this post two to three times longer. You have my apologies, and if the going gets weird and confusing, feel free to skip down a bit, there's no shame!*
