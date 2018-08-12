@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OpenAI and the Future of Humanity"
+title: "National Day of Civic Hacking"
 date: 2018-08-12
 ---
 
