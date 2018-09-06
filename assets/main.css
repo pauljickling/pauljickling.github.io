@@ -29,6 +29,10 @@ img {
   max-width: 100%;
 }
 
+img#profile {
+  clip-path: circle(50%);
+}
+
 pre, code {
   font-family: 'Fira Code Regular', monospace;
   font-size: 16px;
