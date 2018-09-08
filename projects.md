@@ -9,6 +9,10 @@ permalink: /projects/
   <p class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they are suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</p>
   <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog</a></div></li>
 
+  <li class="project"><h2 class="project-title">Shakespeare or Bacon?</h2>
+  <p class="project-text">Shakespeare or Bacon? is an experiment utilizing machine learning to test the Bacon hypothesis.</p>
+  <div class="project-links"><a href="https://github.com/pauljickling/shakespeare-or-bacon">GitHub</a> - <a href="https://pauljickling.github.io/2018/08/31/experiment-machine-learning-part-one.html">Blog Post</a></div></li>
+
   <li class="project"><h2 class="project-title">Dream Stream</h2>
   <p class="project-text">Dream Stream is a Node web app that lists players on the DOTA 2 leaderboards currently streaming on Twitch</p>
   <div class="project-links"><a href="https://github.com/pauljickling/Dream-Stream">GitHub</a> - <a href="https://dreamstream.herokuapp.com">Heroku Page</a> - <a href="https://pauljickling.github.io/2017/03/29/Dream-Stream-Evaluation.html">Blog Post</a></div></li>
