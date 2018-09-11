@@ -7,7 +7,7 @@ permalink: /projects/
 <ul class="post-list">
   <li class="project"><h2 class="project-title">Code for SF - Project Match</h2>
   <p class="project-text">The Project Match app is under active development at Code for SF. It connects users with projects they are suited for based on their skills, what they are interested in learning, and their civic interests. Uses Python, Express, Backbone, and Ember.</p>
-  <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog</a></div></li>
+  <div class="project-links"><a href="https://github.com/designforsf/brigade-matchmaker">GitHub</a> - <a href="https://pauljickling.github.io/2018/06/15/code-for-sf-messaging.html">Blog Post</a></div></li>
 
   <li class="project"><h2 class="project-title">Shakespeare or Bacon?</h2>
   <p class="project-text">Shakespeare or Bacon? is an experiment utilizing machine learning to test the Bacon hypothesis.</p>
