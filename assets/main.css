@@ -198,6 +198,8 @@ p.rss-subscribe {
     translateX(10px)
     rotate(2.5deg);
   z-index: 5;
+  animation-duration: 3s;
+  animation-name: intro1;
 }
 
 span#name {
@@ -215,6 +217,8 @@ span#name {
     translateX(-5px)
     rotate(0deg);
   z-index: 4;
+  animation-duration: 3s;
+  animation-name: intro2;
 }
 
 span#email {
@@ -231,6 +235,8 @@ span#email {
     translateX(10px)
     rotate(-2.5deg);
   z-index: 3;
+  animation-duration: 3s;
+  animation-name: intro3;
 }
 
 #line4 {
@@ -240,6 +246,8 @@ span#email {
     translateX(-5px)
     rotate(0deg);
   z-index: 2;
+  animation-duration: 3s;
+  animation-name: intro4;
 }
 
 #line5 {
@@ -249,7 +257,115 @@ span#email {
     translateX(10px)
     rotate(2.5deg);
   z-index: 1;
+  animation-duration: 3s;
+  animation-name: intro5;
 }
+
+@keyframes intro1 {
+  0% {
+    transform:
+      translateY(-5px)
+      translateX(10px)
+      rotate(2.5deg);
+  }
+  50% {
+    transform:
+      translateY(-5px)
+      translateX(10px)
+      rotate(7.5deg);
+  }
+  100% {
+    transform:
+      translateY(-5px)
+      translateX(10px)
+      rotate(2.5deg);
+  }
+}
+
+@keyframes intro2 {
+  0% {
+    transform:
+      translateY(0px)
+      translateX(-5px)
+      rotate(0deg);
+  }
+  50% {
+    transform:
+      translateY(0px)
+      translateX(-5px)
+      rotate(-5deg);
+  }
+  100% {
+    transform:
+      translateY(0px)
+      translateX(-5px)
+      rotate(0deg);
+  }
+}
+
+@keyframes intro3 {
+  0% {
+    transform:
+      translateY(-2.5px)
+      translateX(10px)
+      rotate(-2.5deg);
+  }
+  50% {
+    transform:
+      translateY(-2.5px)
+      translateX(10px)
+      rotate(3deg);
+  }
+  100% {
+    transform:
+      translateY(-2.5px)
+      translateX(10px)
+      rotate(-2.5deg);
+  }
+}
+
+@keyframes intro4 {
+  0% {
+    transform:
+    translateY(0px)
+    translateX(-5px)
+    rotate(0deg);
+  }
+  50% {
+    transform:
+      translateY(0px)
+      translateX(-5px)
+      rotate(-5deg);
+  }
+  100% {
+    transform:
+      translateY(0px)
+      translateX(-5px)
+      rotate(0deg);
+  }
+}
+
+@keyframes intro5 {
+  0% {
+    transform:
+      translateY(5px)
+      translateX(10px)
+      rotate(2.5deg);
+  }
+  50% {
+    transform:
+      translateY(5px)
+      translateX(10px)
+      rotate(7.5deg);
+  }
+  100% {
+    transform:
+      translateY(5px)
+      translateX(10px)
+      rotate(2.5deg);
+  }
+}
+
 
 /* Footer */
 
