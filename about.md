@@ -13,9 +13,9 @@ permalink: /about/
     Languages:<br>
     Javascript, HTML, CSS, Python<br><br>
     Currently Learning:<br>
-    Rust, Vue.js<br><br>
+    Machine Learning, Natural Language Annotation<br><br>
     Libraries/Frameworks:<br>
-    React, Express, Django, Ember, jQuery<br><br>
+    React, Express, Django, jQuery<br><br>
     Other:<br>
     Git, MongoDB, SQL, Jekyll
   </div>
