@@ -10,13 +10,13 @@ permalink: /about/
   <div id="about-text">Hi, I am a fullstack web developer living in San Francisco. I enjoy developing technologies that keep the web fun, and human-focused. I volunteer at Code for San Francisco working on a web app that will help users find civic tech projects they are suited for.</div>
 
   <div id="about-skills">
-    Languages:<br>
+    <strong>Languages:</strong><br>
     Javascript, HTML, CSS, Python<br><br>
-    Currently Learning:<br>
+    <strong>Currently Learning:</strong><br>
     Machine Learning, Natural Language Annotation<br><br>
-    Libraries/Frameworks:<br>
+    <strong>Libraries/Frameworks:</strong><br>
     React, Express, Django, jQuery<br><br>
-    Other:<br>
+    <strong>Other:</strong><br>
     Git, MongoDB, SQL, Jekyll
   </div>
 </div>

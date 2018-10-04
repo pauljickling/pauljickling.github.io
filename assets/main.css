@@ -16,6 +16,10 @@ body {
   line-height: 1.5;
 }
 
+article {
+  font-size: 18px;
+}
+
 p {
   font-size: 18px;
 }
@@ -173,6 +177,16 @@ div.post-content {
 
 #about-pic {
   display: none;
+}
+
+#about-text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#about-skills {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 /* Misc */
