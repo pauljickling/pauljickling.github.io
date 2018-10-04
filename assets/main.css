@@ -110,6 +110,7 @@ h2.project-title {
 }
 
 p.project-text {
+  line-height: 1.3;
   margin-bottom: 10px;
 }
 
@@ -151,11 +152,9 @@ h1.post-title {
   font-size: 22px;
 }
 
-span.post-meta {
-  font-size: 14px;
-}
-
 li.posts {
+  font-size: 18px;
+  line-height: 1.3;
   margin-left: -30px;
 }
 
