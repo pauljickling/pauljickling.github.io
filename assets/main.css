@@ -209,7 +209,7 @@ p.rss-subscribe {
 
 #line1 {
   background-color: #f3908a;
-  -webkit-transform:
+  transform:
     translateY(-5px)
     translateX(10px)
     rotate(2.5deg);
@@ -228,7 +228,7 @@ span#name {
 
 #line2 {
   background-color: #ff6b5f;
-  -webkit-transform:
+  transform:
     translateY(0px)
     translateX(-5px)
     rotate(0deg);
@@ -246,7 +246,7 @@ span#email {
 
 #line3 {
   background-color: #c74c4e;
-  -webkit-transform:
+  transform:
     translateY(-2.5px)
     translateX(10px)
     rotate(-2.5deg);
@@ -257,7 +257,7 @@ span#email {
 
 #line4 {
   background-color: #b31d02;
-  -webkit-transform:
+  transform:
     translateY(0px)
     translateX(-5px)
     rotate(0deg);
@@ -268,7 +268,7 @@ span#email {
 
 #line5 {
   background-color: #e55b50;
-  -webkit-transform:
+  transform:
     translateY(5px)
     translateX(10px)
     rotate(2.5deg);
