@@ -12,11 +12,9 @@ permalink: /about/
   <div id="about-skills">
     <strong>Languages:</strong><br>
     Javascript, HTML, CSS, Python<br><br>
-    <strong>Currently Learning:</strong><br>
-    Machine Learning, Natural Language Annotation<br><br>
     <strong>Libraries/Frameworks:</strong><br>
     React, Express, Django, jQuery<br><br>
     <strong>Other:</strong><br>
-    Git, MongoDB, SQL, Jekyll
+    Git, MongoDB, SQL, Jekyll, Natural Language Annotation
   </div>
 </div>

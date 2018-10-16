@@ -73,7 +73,7 @@ ul.post-list {
   display: grid;
   grid-gap: 40px;
   margin-left: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
 }
 
 /* Navigation */
@@ -456,6 +456,11 @@ span#email {
   }
   #about-pic {
     display: block;
+    max-width: 75%;
+    height: auto;
+  }
+  #about-text {
+    margin-left: -20px;
   }
   .logo {
     padding: 20px;
