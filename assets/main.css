@@ -158,6 +158,10 @@ li.posts {
   margin-left: -30px;
 }
 
+span.post-meta {
+  font-size: 18px;
+}
+
 /* Blog Post */
 
 div.side-panel {
