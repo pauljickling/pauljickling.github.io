@@ -125,7 +125,8 @@ h2.blog-title {
   font-family: 'Mukta Mahee', serif;
   font-weight: lighter;
   font-size: 20px;
-  color: blue;
+  color: black;
+  margin-bottom: 10px;
   text-decoration: underline;
 }
 
@@ -137,15 +138,6 @@ a.post-link {
   text-decoration: none;
   color: black;
   outline: 0;
-}
-
-a.post-link:hover {
-  text-decoration: underline;
-  color: blue;
-}
-a.post-link:active {
-  text-decoration: underline;
-  color: blue;
 }
 
 h1.post-title {
@@ -161,6 +153,18 @@ li.posts {
 
 span.post-meta {
   font-size: 18px;
+}
+
+p.snippet {
+  text-align: justify;
+}
+
+p.snippet:hover {
+ border-bottom: 5px solid #f3908a; 
+}
+
+p.snippet:active {
+  border-bottom: 5px solid #f3908a;
 }
 
 /* Blog Post */
