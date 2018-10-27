@@ -157,13 +157,16 @@ span.post-meta {
 
 p.snippet {
   text-align: justify;
+  padding-bottom: 15px;
 }
 
 p.snippet:hover {
- border-bottom: 5px solid #f3908a; 
+  padding-bottom: 10px;
+  border-bottom: 5px solid #f3908a; 
 }
 
 p.snippet:active {
+  padding-bottom: 10px;
   border-bottom: 5px solid #f3908a;
 }
 
