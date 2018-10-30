@@ -162,7 +162,7 @@ p.snippet {
 
 p.snippet:hover {
   padding-bottom: 10px;
-  border-bottom: 5px solid #f3908a; 
+  border-bottom: 5px solid #f3908a;
 }
 
 p.snippet:active {
@@ -171,6 +171,11 @@ p.snippet:active {
 }
 
 /* Blog Post */
+
+h1.post-title {
+  font-size: 24px;
+  margin-bottom: 0px;
+}
 
 div.side-panel {
   display: none;
@@ -498,8 +503,10 @@ span#email {
   }
   div.side-panel {
     display: block;
+    max-width: 400px;
   }
   article.post {
     margin-left: -5px;
+    max-width: 80ch;
   }
 }
