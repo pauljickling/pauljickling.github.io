@@ -32,3 +32,4 @@ permalink: /projects/
   <li class="project"><h2 class="project-title">Interview with David Jickling</h2>
   <p class="project-text">An interview with my grandfather about his career in government available in the XML format. I created a more reader friendly version by inserting a CSS file into the header.</p>
   <div class="project-links"><a href="https://github.com/pauljickling/Interview-with-David-Jickling">GitHub</a> - <a href="https://pauljickling.github.io/sites/loc/loc.xml">Demo</a> - <a href="https://pauljickling.github.io/2017/04/02/Interview-With-David-Jickling-Evaluation.html">Blog Post</a></div></li>
+</ul>
