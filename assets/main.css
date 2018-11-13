@@ -68,7 +68,7 @@ ul.post-list {
   grid-gap: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
   max-width: 1440px;
 }
 
@@ -189,6 +189,10 @@ article.post {
 
 div.post-content {
   max-width: 100ch;
+}
+
+div.post-content {
+  max-width: 80ch;
 }
 
 /* About */
@@ -468,6 +472,7 @@ span#email {
     margin-left: 10px;
   }
   div.page-content {
+    width: 100%;
     margin-left: 5px;
   }
   #about-grid {
@@ -509,6 +514,5 @@ span#email {
   }
   article.post {
     margin-left: -5px;
-    max-width: 80ch;
   }
 }
