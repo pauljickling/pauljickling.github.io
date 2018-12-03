@@ -52,7 +52,7 @@ pre, code {
   grid-gap: 20px;
   margin-left: 5px;
   margin-right: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
 }
 
 .blog-grid {
@@ -68,7 +68,7 @@ ul.post-list {
   grid-gap: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
   max-width: 1440px;
 }
 
@@ -76,7 +76,7 @@ ul.post-list {
   display: grid;
   grid-gap: 40px;
   margin-left: 5px;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 400px));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 350px));
 }
 
 /* Navigation */
@@ -185,10 +185,6 @@ div.side-panel {
 
 article.post {
   margin-left: 5px;
-}
-
-div.post-content {
-  max-width: 100ch;
 }
 
 div.post-content {
@@ -458,13 +454,13 @@ span#email {
   .blog-grid {
     grid-template-columns: 500px auto;
   }
-}
-
-@media screen and (min-width: 1080px) {
   .nav-container {
     margin-left: 40px;
     margin-right: 40px;
   }
+}
+
+@media screen and (min-width: 1080px) {
   div.blog-grid {
     grid-template-columns: 1fr 3fr;
   }
@@ -475,6 +471,15 @@ span#email {
     width: 100%;
     margin-left: 5px;
   }
+/*
+  div.post-content {
+    margin-left: -50px;
+  }
+
+  header.post-header {
+    margin-left: -50px;
+  }
+*/
   #about-grid {
     margin-left: 60px;
     margin-right: 60px;
@@ -510,7 +515,7 @@ span#email {
   }
   div.side-panel {
     display: block;
-    max-width: 400px;
+    max-width: 350px;
   }
   article.post {
     margin-left: -5px;
