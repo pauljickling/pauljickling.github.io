@@ -28,4 +28,8 @@ Hopefully the method you are looking up has a unique name. But of course there i
 
 `grep addItem -r --exclude-dir=node_modules`
 
-This excluded all the npm dependencies the project was using, and eliminated thousands of results down to two! With a couple of thoughtful queries, recrusive grep searches is one of the most powerful debugging tools I know of.
+This excluded all the npm dependencies the project was using, and eliminated thousands of results down to two! With a couple of thoughtful queries, recursive grep searches is one of the most powerful debugging tools I know of. As you get more comfortable with grep and other tools available in the Linux command line you will be able to accomplish even more. For example, you could output your grep search into a file that can be referenced there instead of the standard output on the terminal:
+
+`grep -Hn [0-9] file_name.txt > search_results.txt`
+
+Here we are using the `-Hn` flag which will prefix our output with the filename and line number. We are using a regular expression for our search pattern that will look for any digits, and it outputs the file to search_results.txt.
