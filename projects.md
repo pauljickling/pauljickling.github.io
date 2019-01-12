@@ -21,6 +21,10 @@ permalink: /projects/
   <p class="project-text">Whiteboard is a Django app that serves a random whiteboard problem for the user to solve. Answers are stored in a database so that the user can review previous answers provided to the problem.</p>
   <div class="project-links"><a href="https://github.com/pauljickling/whiteboard">GibHub</a> - <a href="https://pauljickling.github.io/2018/07/30/Whiteboard.html">Blog Post</a></div></li>
 
+  <li class="project"><h2 class="project-title">Passcode-Gen</h2>
+  <p class="project-text">My password manager of choice isn't available on my Linux machine, so I wrote up a customizable password generator for instances when I needed to come up with a new password while using Linux.</p>
+  <div class="project-links"><a href="https://github.com/pauljickling/Passcode-Gen">GitHub</a></div></li>
+
   <li class="project"><h2 class="project-title">Responsive Mondrian Design</h2>
   <p class="project-text">A demonstration using CSS grid techniques to create a responsive web page recreating an iconic Mondrian piece</p>
   <div class="project-links"><a href="https://github.com/pauljickling/Mondrian-Grid-Demo">Github</a> - <a href="https://pauljickling.github.io/sites/mondrian">Demo</a></div></li>
