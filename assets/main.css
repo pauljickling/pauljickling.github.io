@@ -452,7 +452,7 @@ span#email {
 
 @media screen and (min-width: 600px) {
   .blog-grid {
-    grid-template-columns: 500px auto;
+    grid-template-columns: 400px auto;
   }
   .nav-container {
     margin-left: 40px;
@@ -461,9 +461,6 @@ span#email {
 }
 
 @media screen and (min-width: 1080px) {
-  div.blog-grid {
-    grid-template-columns: 1fr 3fr;
-  }
   ul.post-list {
     margin-left: 10px;
   }
@@ -471,15 +468,6 @@ span#email {
     width: 100%;
     margin-left: 5px;
   }
-/*
-  div.post-content {
-    margin-left: -50px;
-  }
-
-  header.post-header {
-    margin-left: -50px;
-  }
-*/
   #about-grid {
     margin-left: 60px;
     margin-right: 60px;
