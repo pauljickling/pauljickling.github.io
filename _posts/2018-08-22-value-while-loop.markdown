@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "The Value of while"
+title: "The Value of `while`"
 date: 2018-08-22
 ---
 
 When you are learning to program you come across certain pieces of advice that are helpful, but not entirely accurate. The intention is not to be misleading, but to act as a safeguard against the mental habit to abstract away subtle details that, when ignored, lead to buggy software. So in Javascript we are taught to use `===` evaluators instead of `==`. In truth both operators have their value, it just depends on whether we care about evaluating data types or not. Similarly, I remember learning about how to write a while loop, and then quickly being told to forget all that and use for loops.
 
-## Why are there while loops at all instead of nothingness?
+## Why are there `while` loops at all instead of nothingness?
 
 It's easy to understand why a for loop is generally preferable to the while loop. Creating an infinite while loop is incredibly easy. Although it is not impossible to write an infinite for loop, it is harder to write one by accident.
 
@@ -33,9 +33,11 @@ import random
 
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+
 def random_select(list):
     selection = random.choice(list)
     return selection
+
 
 random1 = random_select(numbers)
 random2 = random_select(numbers)
