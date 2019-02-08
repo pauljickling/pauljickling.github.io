@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Value of `while`"
+title: "The Value of while"
 date: 2018-08-22
 ---
 
