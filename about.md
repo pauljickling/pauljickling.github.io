@@ -11,7 +11,7 @@ permalink: /about/
 
   <div id="about-skills">
     <strong>Languages:</strong><br>
-    Python, Javascript, HTML, CSS, Rust(beginner)<br><br>
+    Python, JavaScript, HTML, CSS, Rust(beginner)<br><br>
     <strong>Libraries/Frameworks:</strong><br>
     React, Django, Express, jQuery<br><br>
     <strong>Other:</strong><br>
