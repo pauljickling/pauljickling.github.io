@@ -21,6 +21,7 @@ permalink: /projects/
     <h2 class="project-title">Trash Opinions</h2>
     <p class="project-text">A Firefox extension that improves the reading experience when browsing the Washington Post by removing the opinion section.</p>
     <div class="project-links"><a href="https://addons.mozilla.org/en-US/firefox/addon/trash-opinions/">Mozilla Addons Page</a> - <a href="https://pauljickling.github.io/2019/03/08/trash-opinions.html">Blog Post</a></div>
+  </li>
   
   <li class="project">
     <h2 class="project-title">Shakespeare or Bacon?</h2>
