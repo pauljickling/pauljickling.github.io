@@ -15,6 +15,6 @@ permalink: /about/
     <strong>Libraries/Frameworks:</strong><br>
     React, Django, Express, jQuery<br><br>
     <strong>Other:</strong><br>
-    Git, MongoDB, SQL, Jekyll, Natural Language Annotation
+    AWS, Ansible, Git, MongoDB, SQL, Jekyll, Natural Language Annotation
   </div>
 </div>
