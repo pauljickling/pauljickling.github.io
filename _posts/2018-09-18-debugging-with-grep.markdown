@@ -33,3 +33,9 @@ This excluded all the npm dependencies the project was using, and eliminated tho
 `grep -Hn [0-9] file_name.txt > search_results.txt`
 
 Here we are using the `-Hn` flag which will prefix our output with the filename and line number. We are using a regular expression for our search pattern that will look for any digits, and it outputs the file to search_results.txt.
+
+**UPDATE 6/24/2019**
+
+I recently discovered that the way grep is implemented on MacOS differs slightly. To do a recursive search in a Mac environment you also need to specify the relative path where your search is happening. So to search from your current directory path:
+
+`grep foo -r .`
