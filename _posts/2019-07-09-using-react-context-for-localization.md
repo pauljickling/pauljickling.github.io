@@ -51,13 +51,13 @@ Now that we have a component that is consuming the `toggleLanguage` method it is
 </LanguageContext.Provider>
 ```
 
-After defining the state to be associated with the language properties of our context, we can now pass that information along our component tree as ordinary props.
+After defining the state to be associated with the language properties of our context, the context will consistently be updated for all components that are context consumers. You can also simplify this process by defining them using the `contextType` method. `ComponentName.contextType = ContextName;`
 
 Components that need to render text can then utilize some sort of `getText` method.
 
 ```
 getText = () => {
-  if (this.props.language === "EN") {
+  if (this.context.language === "EN") {
     return <p>{English}</p>;
 } else {
     return <p>{Spanish}</p>
