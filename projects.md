@@ -31,7 +31,7 @@ permalink: /projects/
 
   <li class="project">
     <h2 class="project-title">Dream Stream</h2>
-    <p class="project-text">Dream Stream is a Node web app that lists players on the DOTA 2 leaderboards currently streaming on Twitch</p>
+    <p class="project-text">Dream Stream is a Node web app that lists players on the DOTA 2 leaderboards currently streaming on Twitch. Note that it currently needs an API update and is on the free tier of Heroku.</p>
     <div class="project-links"><a href="https://github.com/pauljickling/Dream-Stream">GitHub</a> - <a href="https://dreamstream.herokuapp.com">Heroku Page</a> - <a href="https://pauljickling.github.io/2017/03/29/Dream-Stream-Evaluation.html">Blog Post</a></div>
   </li>
 
