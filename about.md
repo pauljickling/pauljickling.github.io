@@ -10,11 +10,12 @@ permalink: /about/
   <div id="about-text">Hi, I am a software engineer that lives in San Francisco. I volunteer at Code for San Francisco. I like cooking, roguelikes, watching Dota 2 tournaments, checking out weird music on bandcamp, and learning languages (badly).</div>
 
   <div id="about-skills">
-    <strong>Languages:</strong><br>
-    Python, JavaScript (TypeScript too!), HTML, CSS, Rust(beginner)<br><br>
-    <strong>Libraries/Frameworks:</strong><br>
-    React, Django, Express<br><br>
-    <strong>Other:</strong><br>
-    AWS, Git, MongoDB, SQL
+    <h2>Technical Background</h2>
+    <p><strong>Languages:</strong><br>
+    Python, JavaScript (TypeScript too!), HTML, CSS, Bash, Rust(beginner)</p>
+    <p><strong>Libraries/Frameworks:</strong><br>
+    React, Django, Flask, Express</p>
+    <p><strong>Other:</strong><br>
+    AWS, Ansible, Git, MongoDB, SQL</p>
   </div>
 </div>
