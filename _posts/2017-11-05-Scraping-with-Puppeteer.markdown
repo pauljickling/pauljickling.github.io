@@ -12,9 +12,11 @@ After installing it via NPM you can write a script that looks something like thi
     (async () => {
       const browser = await puppeteer.launch();
       const page = await browser.newPage();
-      await page.goto('http://www.dota2.com/procircuit');
+      try {
+        await page.goto('http://www.dota2.com/procircuit');
+      } catch(e) { console.log(e) }
 
-      Await browser.close();
+      await browser.close();
     })();
 
 
