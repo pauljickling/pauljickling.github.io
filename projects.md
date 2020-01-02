@@ -18,6 +18,11 @@ permalink: /projects/
   </li>
 
   <li class="project">
+    <h2 class="project-title">Dead Links Search</h2>
+    <p class="project-text">Dead Links Search is a tool for identifying dead links on a web application using Puppeteer and Bash. It generates a CVS file with a list of HTTP status codes and URLs.</p>
+    <div class="project-links"><a href="https://github.com/pauljickling/dead-links-search">GitHub</a> - <a href="https://pauljickling.github.io/2019/12/29/checking-for-bad-links.html">Blog Post</a></div>
+
+  <li class="project">
     <h2 class="project-title">Trash Opinions</h2>
     <p class="project-text">A Firefox extension that improves the reading experience when browsing the Washington Post by removing the opinion section.</p>
     <div class="project-links"><a href="https://addons.mozilla.org/en-US/firefox/addon/trash-opinions/">Mozilla Addons Page</a> - <a href="https://pauljickling.github.io/2019/03/08/trash-opinions.html">Blog Post</a></div>
