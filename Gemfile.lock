@@ -44,6 +44,7 @@ GEM
       jekyll (~> 3.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
+    prettier (0.19.0)
     public_suffix (3.0.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
@@ -64,10 +65,11 @@ DEPENDENCIES
   jekyll (= 3.8.5)
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
+  prettier
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.3.7p456
+   ruby 2.7.0p0
 
 BUNDLED WITH
-   2.0.2
+   2.1.2
