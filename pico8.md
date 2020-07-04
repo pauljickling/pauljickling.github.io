@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: pico8
 title: PICO-8 Instructions
 permalink: /pico-8/
 ---

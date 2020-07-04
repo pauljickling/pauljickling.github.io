@@ -509,3 +509,23 @@ span#email {
     margin-left: -5px;
   }
 }
+
+/* Pico-8 page */
+
+.pico8-title {
+  margin-left: 8px;
+}
+
+div.pico8 {
+  margin-left: 8px;
+  max-width: 80ch;
+}
+
+@media screen and (min-width: 768px) {
+  .pico8-title {
+    margin-left: 2rem;
+  }
+  .pico8 {
+    margin-left: 2rem;
+  }
+}
