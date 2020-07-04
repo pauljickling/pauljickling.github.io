@@ -89,17 +89,23 @@ And to load it again:
 These cartridges are included with PICO-8 and can be installed by typing:
 
 ```
-    INSTALL_DEMOS
-    CD DEMOS
-    LS
-    ```
+INSTALL_DEMOS
+CD DEMOS
+LS
+```
 
 **HELLO**      Greetings from PICO-8
+
 **API**        Demonstrates most PICO-8 functions
+
 **JELPI**      Platform game demo w/ 2p support
+
 **CAST**       2.5D Raycaster demo
+
 **DRIPPY**     Draw a drippy squiggle
+
 **WANDER**     Simple walking simulator
+
 **COLLIDE**    Example wall and actor collisions
 
 To run a cartridge, open PICO-8 and type:
@@ -132,13 +138,14 @@ If you want to move files around, duplicate them or delete them, use the `FOLDER
 The default location for PICO-8's drive is:
 
 **Windows:** C:/Users/Yourname/AppData/Roaming/pico-8/carts
+
 **OSX:** /Users/Yourname/Library/Application Support/pico-8/carts
+
 **Linux:** ~/.lexaloffle/pico-8/carts
 
 You can change this and other settings in `pico-8/config.txt`
 
 **Tip:** The drive directory can be mapped to a cloud drive (provided by Dropbox, Google Drive or similar) in order to create a single disk shared between PICO-8 machines spread across different host machines.
-
 
 ## Loading and Saving
 
@@ -188,9 +195,11 @@ If you quit without saving changes, or overwrite an existing file, a backup of t
 
 You can find some settings in `config.txt`. Edit the file when PICO-8 is not running.
 
-Windows: C:/Users/Yourname/AppData/Roaming/pico-8/config.txt
-OSX: /Users/Yourname/Library/Application Support/pico-8/config.txt
-Linux: ~/.lexaloffle/pico-8/config.txt
+**Windows:** C:/Users/Yourname/AppData/Roaming/pico-8/config.txt
+
+**OSX:** /Users/Yourname/Library/Application Support/pico-8/config.txt
+
+**Linux:** ~/.lexaloffle/pico-8/config.txt
 
 Use the `-home` switch (below) to use a different path to store config.txt and other data.
 
@@ -310,7 +319,7 @@ Optionally provide a custom html template with the `-p` switch:
 
 `> EXPORT FOO.HTML -P ONE_BUTTON`
 
-This will use the file {application data}/pico-8/plates/one_button.html as the html shell, replacing a special string, ##js_file##, with the .js filename.
+This will use the file `{application data}/pico-8/plates/one_button.html` as the html shell, replacing a special string, `##js_file##`, with the `.js` filename.
 
 Use `-w` to export as `.wasm` + `.js`:  // ** still experimental! **
 
@@ -331,7 +340,6 @@ By default, the cartridge label is used as an icon with no transparency. To spec
 For example, to use a 2x2 sprite starting at index 32 in the spritesheet, using colour 12 as transparent:
 
 `> EXPORT -I 32 -S 2 -C 12 FOO.BIN`
-
 
 **Technical note:** Windows file systems do not support the file metadata needed to create a Linux or Mac executable. PICO-8 works around this by exporting zip files in a way that preserves the file attributes, as long as the zip files are not re-packaged.
 
@@ -625,90 +633,94 @@ For more details, or to find out about proper Lua, see [www.lua.org](www.lua.org
 
 ## Comments
 ```
-        -- use two hyphens like this to ignore everything until the end of the line
-        --[[ multi-line
-        comments ]]
-    ```
+-- use two hyphens like this to ignore everything until the end of the line
+--[[ multi-line
+    comments ]]
+```
 
 ## Types and assignment
 
 Types in Lua are numbers, strings, booleans and tables:
 ```
-        NUM = 12/100
-        S = "THIS IS A STRING"
-        B = FALSE
-        T = {1,2,3}
-    ```
+NUM = 12/100
+S = "THIS IS A STRING"
+B = FALSE
+T = {1,2,3}
+```
 Numbers in PICO-8 are all 16:16 fixed point. They range from -32768.0 to 32767.99999
 
 Hexadecimal notation with optional fractional parts can be used:
+
 ```
-            0x11        -- 17
-            0x11.4000   -- 17.25
-    ```
+0x11        -- 17
+0x11.4000   -- 17.25
+```
+
 Numbers written in decimal are rounded to the closest fixed point value. To see the 32-bit hexadecimal representation, use `PRINT(TOSTR(VAL,TRUE))`:
-        ```
-            ?TOSTR(-32768,TRUE)      -- 0x8000.0000
-            ?TOSTR(32767.99999,TRUE) -- 0x7fff.ffff
-        ```
+
+```
+?TOSTR(-32768,TRUE)      -- 0x8000.0000
+?TOSTR(32767.99999,TRUE) -- 0x7fff.ffff
+```
+
 Dividing by zero evaluates to 0x7fff.ffff if positive, or -0x7fff.ffff if negative.
 
 ## Conditionals
 
 ```
-        IF NOT B THEN
-            PRINT("B IS FALSE")
-        ELSE
-            PRINT("B IS NOT FALSE")
-        END
+IF NOT B THEN
+ PRINT("B IS FALSE")
+ELSE
+ PRINT("B IS NOT FALSE")
+END
 
-        -- with ELSEIF
+-- with ELSEIF
 
-        IF X == 0 THEN
-            PRINT("X IS 0")
-        ELSEIF X < 0 THEN
-            PRINT("X IS NEGATIVE")
-        ELSEIF X > 0 THEN
-            PRINT("X IS POSITIVE")
-        ELSE
-            PRINT("THIS IS LINE IS NEVER REACHED")
-        END
+IF X == 0 THEN
+ PRINT("X IS 0")
+ELSEIF X < 0 THEN
+ PRINT("X IS NEGATIVE")
+ELSEIF X > 0 THEN
+ PRINT("X IS POSITIVE")
+ELSE
+ PRINT("THIS IS LINE IS NEVER REACHED")
+END
 
-        IF (4 == 4) THEN PRINT("EQUAL") END
-        IF (4 ~= 3) THEN PRINT("NOT EQUAL") END
-        IF (4 <= 4) THEN PRINT("LESS THAN OR EQUAL") END
-        IF (4 > 3) THEN PRINT("MORE THAN") END
+IF (4 == 4) THEN PRINT("EQUAL") END
+IF (4 ~= 3) THEN PRINT("NOT EQUAL") END
+IF (4 <= 4) THEN PRINT("LESS THAN OR EQUAL") END
+IF (4 > 3) THEN PRINT("MORE THAN") END
 ```
 
 ## Loops
 
 ```
-        FOR X=1,5 DO
-            PRINT(X)
-        END
-        -- prints 1,2,3,4,5
+FOR X=1,5 DO
+ PRINT(X)
+END
+-- prints 1,2,3,4,5
 
-        X = 1
-        WHILE(X <= 5) DO
-            PRINT(X)
-            X = X + 1
-        END
+X = 1
+WHILE(X <= 5) DO
+ PRINT(X)
+ X = X + 1
+END
 
-        FOR X=1,10,3 DO PRINT(X) END   -- 1,4,7,10
+FOR X=1,10,3 DO PRINT(X) END   -- 1,4,7,10
 
-        FOR X=5,1,-2 DO PRINT(X) END  -- 5,3,1
-    ```
+FOR X=5,1,-2 DO PRINT(X) END  -- 5,3,1
+```
 
 ## Functions and Local Variables
 
 ```
-        Y=0
-        FUNCTION PLUSONE(X)
-            LOCAL Y = X+1
-            RETURN Y
-        END
-        PRINT(PLUSONE(2)) -- 3
-        PRINT(Y)          -- 0
+Y=0
+FUNCTION PLUSONE(X)
+ LOCAL Y = X+1
+ RETURN Y
+END
+PRINT(PLUSONE(2)) -- 3
+PRINT(Y)          -- 0
 ```
 
 ## Tables
@@ -716,27 +728,27 @@ Dividing by zero evaluates to 0x7fff.ffff if positive, or -0x7fff.ffff if negati
 In Lua, tables are a collection of key-value pairs where the key and value types can both be mixed. They can be used as arrays by indexing them with integers.
 
 ```
-        A={} -- create an empty table
-        A[1] = "BLAH"
-        A[2] = 42
-        A["FOO"] = {1,2,3}
+A={} -- create an empty table
+A[1] = "BLAH"
+A[2] = 42
+A["FOO"] = {1,2,3}
 
-        -- Arrays use 1-based indexing by default
+-- Arrays use 1-based indexing by default
 
-        A = {11,12,13,14}
-        PRINT(A[2]) -- 12
+A = {11,12,13,14}
+PRINT(A[2]) -- 12
 
-        -- The size of a table indexed with sequential 1-based integers:
+-- The size of a table indexed with sequential 1-based integers:
 
-        PRINT(#A)   -- 4
+PRINT(#A)   -- 4
 
-        -- Indexes that are strings can be written using dot notation
+-- Indexes that are strings can be written using dot notation
 
-        PLAYER = {}
-        PLAYER.X = 2 -- is equivalent to PLAYER["X"]
-        PLAYER.Y = 3
+PLAYER = {}
+PLAYER.X = 2 -- is equivalent to PLAYER["X"]
+PLAYER.Y = 3
 
-        -- see also the tables section in the api reference below.
+-- see also the tables section in the api reference below.
 ```
 
 ## PICO-8 Shorthand
@@ -746,11 +758,11 @@ PICO-8 also allows several non-standard, shorter ways to write common patterns.
 1. `IF THEN END` statements, and `WHILE THEN END` can be written on a single line with:
 
 ```
-        IF (NOT B) I=1 J=2
+IF (NOT B) I=1 J=2
 
-        -- is equivalent to: IF NOT B THEN I=1 J=2 END
-        -- note that brackets around the short-hand condition are required.
-    ```
+-- is equivalent to: IF NOT B THEN I=1 J=2 END
+-- note that brackets around the short-hand condition are required.
+```
 
 2. Assignment operators
 
@@ -777,9 +789,10 @@ System functions called from commandline can omit the usual brackets and string 
 ## System
 
 ```
-    load filename [breadcrumb [param_str]]
-    save filename
-    ```
+load filename [breadcrumb [param_str]]
+save filename
+```
+
 Load or save a cartridge
 
 When loading from a running cartridge, the loaded cartridge is immediately run with parameter string `param_str`, and a menu item is inserted and named breadcrumb, that returns the user to the loading cartridge.
@@ -812,7 +825,6 @@ Stop the cart and optionally print a message.
 Resume the program. Use `R` for short.
 
 Use a single `.` from the command line to advance a single frame. This enters frame-by-frame mode, that can be read with stat(110). While frame-by-frame mode is active, entering an empty command (by pressing enter) advances one frames.
-
 
 `reboot`
 
@@ -878,13 +890,13 @@ Special system command, where x is a string:
 
 - "pause"       request the pause menu be opened
 - "reset"       request a cart reset
-- "go_back"     follow the current breadcrumb (if there is one)
+- "go\_back"     follow the current breadcrumb (if there is one)
 - "label"       set cart label
 - "screen"      save a screenshot
 - "rec"         set video start point
 - "video"       save a .gif to desktop
-- "audio_rec"   start recording audio
-- "audio_end"   save recorded audio to desktop
+- "audio\_rec"   start recording audio
+- "audio\_end"   save recorded audio to desktop
 - "shutdown"    quit cartridge (from exported binary)
 
 ## Program Structure
@@ -921,9 +933,9 @@ If `_update60()` is defined instead of `_update()`, PICO-8 will run in 60fps mod
 Source code can be injected into a program at cartridge boot (but not during runtime) using `#INCLUDE FILENAME`, where `FILENAME` is either a plaintext file (containing Lua code), a tab from another cartridge, or all tabs from another cartridge:
 
 ```
-        #INCLUDE SOMECODE.LUA
-        #INCLUDE ONETAB.P8:1
-        #INCLUDE ALLTABS.P8
+#INCLUDE SOMECODE.LUA
+#INCLUDE ONETAB.P8:1
+#INCLUDE ALLTABS.P8
 ```
 
 When the cartridge is run, the contents of each included file is treated as if it had been pasted into the editor in place of that line.
@@ -954,12 +966,12 @@ The draw state is reset each time a program is run. This is equivalent to callin
 **Colours indexes:**
 
 0. black
-1. dark_blue
-2. dark_purple
-3. dark_green
+1. dark\_blue
+2. dark\_purple
+3. dark\_green
 4. brown
-5. dark_gray
-6. light_gray
+5. dark\_gray
+6. light\_gray
 7. white
 8. red
 9. orange
@@ -976,22 +988,22 @@ The draw state is reset each time a program is run. This is equivalent to callin
 - `clip()` to reset
 
 ```
-    pget x y
-    pset x y [c]
+pget x y
+pset x y [c]
 ```
 
 Get or set the colour (c) of a pixel at x, y.
 
 ```
-    sget x y
-    sset x y [c]
+sget x y
+sset x y [c]
 ```
 
 Get or set the colour (c) of a spritesheet pixel.
 
 ```
-    fget n [f]
-    fset n [f] v
+fget n [f]
+fset n [f] v
 ```
 
 - Get or set the value (v) of a sprite's flag
@@ -1005,14 +1017,14 @@ The meaning of sprite flags is up to the user, or can be used to indicate which 
 If the flag index is omitted, all flags are retrieved/set as a bitfield
 
 ```
-        fset(2, 1+2+8)   -- sets bits 0,1 and 3
-        fset(2, 4, true) -- sets bit 4
-        print(fget(2))   -- 27 (1+2+8+16)
+fset(2, 1+2+8)   -- sets bits 0,1 and 3
+fset(2, 4, true) -- sets bit 4
+print(fget(2))   -- 27 (1+2+8+16)
 ```
 
 ```
-    print str x y [col]
-    print str [col]
+print str x y [col]
+print str [col]
 ```
 
 Print a string and optionally set the colour to col.
@@ -1040,9 +1052,9 @@ If x and y are not supplied, the text will automatically wrap and cause carriage
 - Set a screen offset of -x, -y for all drawing operations
 - `camera()` to reset
 
-    ```
-    circ     x y r [col]
-    circfill x y r [col]
+```
+circ     x y r [col]
+circfill x y r [col]
 ```
 
 - Draw a circle or filled circle at x,y with radius r
@@ -1055,8 +1067,8 @@ If x and y are not supplied, the text will automatically wrap and cause carriage
 - if `x1`,`y1` are not given the end of the last drawn line is used
 
 ```
-    rect     x0 y0 x1 y1 [col]
-    rectfill x0 y0 x1 y1 [col]
+rect     x0 y0 x1 y1 [col]
+rectfill x0 y0 x1 y1 [col]
 ```
 
 Draw a rectangle or filled rectangle
@@ -1075,8 +1087,8 @@ PICO-8's draw state has two palettes. p specifies which one to modify, and defau
 For example, to swap colour 12 (blue) for colour 8 (red) when drawing a sprite:
 
 ```
-            PAL(8,12)
-            SPR(1,60,60)
+PAL(8,12)
+SPR(1,60,60)
 ```
 
 `PAL()` to reset to system defaults (including transparency values and fill pattern)
@@ -1149,8 +1161,8 @@ The default fill pattern is 0, which means a single solid colour is drawn.
 To specify a second colour for the pattern, use the high bits of any colour parameter:
 
 ```
-            FILLP(0b0011010101101000)
-            CIRCFILL(64,64,20, 0x4E) -- brown and pink
+FILLP(0b0011010101101000)
+CIRCFILL(64,64,20, 0x4E) -- brown and pink
 ```
 
 An additional bit 0b0.1 can be set to indicate that the second colour is not drawn.
@@ -1160,14 +1172,13 @@ An additional bit 0b0.1 can be set to indicate that the second colour is not dra
 The fill pattern can also be set by setting bits in any colour parameter:
 
 ```
-            POKE(0x5F34, 1) -- sets integrated fillpattern + colour mode
-            CIRCFILL(64,64,20, 0x114E.ABCD) -- sets fill pattern to ABCD
+POKE(0x5F34, 1) -- sets integrated fillpattern + colour mode
+CIRCFILL(64,64,20, 0x114E.ABCD) -- sets fill pattern to ABCD
 
-            -- bit  0x1000.0000 means the non-colour bits should be observed
-            -- bit  0x0100.0000 transparency bit
-            -- bits 0x00FF.0000 are the usual colour bits
-            -- bits 0x0000.FFFF are interpreted as the fill pattern
-
+-- bit  0x1000.0000 means the non-colour bits should be observed
+-- bit  0x0100.0000 transparency bit
+-- bits 0x00FF.0000 are the usual colour bits
+-- bits 0x0000.FFFF are interpreted as the fill pattern
 ```
 
 ## Tables
@@ -1178,10 +1189,10 @@ The fill pattern can also be set by setting bits in any colour parameter:
 - Equivalent to `t[#t+1] = v`
 
 ```
-            FOO={}        -- create empty table
-            ADD(FOO, 11)
-            ADD(FOO, 22)
-            PRINT(FOO[2]) -- 22
+FOO={}        -- create empty table
+ADD(FOO, 11)
+ADD(FOO, 22)
+PRINT(FOO[2]) -- 22
 ```
 
 `del t v`
@@ -1192,24 +1203,22 @@ The fill pattern can also be set by setting bits in any colour parameter:
 - `del()` can be called safely on a table's item while iterating over that table.
 
 ```
-            A={1,10,2,11,3,12}
-            FOR ITEM IN ALL(A) DO
-                IF (ITEM < 10) THEN DEL(A, ITEM) END
-            END
-            FOREACH(A, PRINT) -- 10,11,12
-            PRINT(A[3])       -- 12
+A={1,10,2,11,3,12}
+FOR ITEM IN ALL(A) DO
+ IF (ITEM < 10) THEN DEL(A, ITEM) END
+END
+FOREACH(A, PRINT) -- 10,11,12
+PRINT(A[3])       -- 12
 ```
-
-`all t`
-
+all t`
 Used in `FOR` loops to iterate over all items in a table (that have a 1-based integer index), in the order they were added.
 
 ```
-            T = {11,12,13};
-            ADD(T,14)
-            ADD(T,"HI")
-            FOR V IN ALL(T) DO PRINT(V) END -- 11 12 13 14 HI
-            PRINT(#T) -- 5
+T = {11,12,13};
+ADD(T,14)
+ADD(T,"HI")
+FOR V IN ALL(T) DO PRINT(V) END -- 11 12 13 14 HI
+PRINT(#T) -- 5
 ```
 
 `foreach t f`
@@ -1223,19 +1232,19 @@ For each item in table `t`, call function `f` with the item as a single paramete
 Used in `FOR` loops to iterate over table `t`, providing both the key and value for each item. Unlike `all()`, `pairs()` iterates over every item regardless of indexing scheme. Order is not guaranteed.
 
 ```
-            T = {["HELLO"]=3, [10]="BLAH"}
-            T.BLUE = 5;
-            FOR K,V IN PAIRS(T) DO
-                PRINT("K: "..K.."  V:"..V)
-            END
+T = {["HELLO"]=3, [10]="BLAH"}
+T.BLUE = 5;
+FOR K,V IN PAIRS(T) DO
+ PRINT("K: "..K.."  V:"..V)
+END
 ```
 
 Output:
 
 ```
-            K: 10  v:BLAH
-            K: HELLO  v:3
-            K: BLUE  v:5
+K: 10  v:BLAH
+K: HELLO  v:3
+K: BLUE  v:5
 ```
 
 
@@ -1300,8 +1309,8 @@ Reserved channels can still be used to play sound effects on, but only when that
 The PICO-8 map is a 128x32 grid of 8-bit cells, or 128x64 when using the shared memory. When using the map editor, the meaning of each cell is taken to be an index into the spritesheet (0..255). However, it can instead be used as a general block of data.
 
 ```
-    mget x y
-    mset x y v
+mget x y
+mset x y v
 ```
 
 get or set map value (v) at x,y
@@ -1337,9 +1346,9 @@ The map coordinates (mx, my) are masked by values calculated by subtracting 0x0.
 For example, to loop every 8 tiles horizontally, and every 4 tiles vertically:
 
 ```
-            POKE(0x5F38, 8)
-            POKE(0x5F39, 4)
-            TLINE(...)
+POKE(0x5F38, 8)
+POKE(0x5F39, 4)
+TLINE(...)
 ```
 
 The default values (0,0) gives a masks of 0xff.ffff, which means that the samples will loop every 256 tiles.
@@ -1347,8 +1356,8 @@ The default values (0,0) gives a masks of 0xff.ffff, which means that the sample
 An offset to sample from (also in tiles) can also be specified at addresses 0x5f3a, 0x5f3b
 
 ```
-            POKE(0x5F3A, OFFSET_X)
-            POKE(0x5F3B, OFFSET_Y)
+POKE(0x5F3A, OFFSET_X)
+POKE(0x5F3B, OFFSET_Y)
 ```
 
 ## Memory
@@ -1371,25 +1380,25 @@ While using the editor, the data being modified is in cart rom, but api function
 ## Base ram memory layout
 
 ```
-        0x0    gfx
-        0x1000 gfx2/map2 (shared)
-        0x2000 map
-        0x3000 gfx flags
-        0x3100 song
-        0x3200 sfx
-        0x4300 user data
-        0x5e00 persistent cart data (256 bytes)
-        0x5f00 draw state
-        0x5f40 hardware state
-        0x5f80 gpio pins (128 bytes)
-        0x6000 screen (8k)
+0x0    gfx
+0x1000 gfx2/map2 (shared)
+0x2000 map
+0x3000 gfx flags
+0x3100 song
+0x3200 sfx
+0x4300 user data
+0x5e00 persistent cart data (256 bytes)
+0x5f00 draw state
+0x5f40 hardware state
+0x5f80 gpio pins (128 bytes)
+0x6000 screen (8k)
 ```
 
 User data has no particular meaning and can be used for anything via `memcpy()`, `peek()` & `poke()`. Persistent cart data is mapped to 0x5e00..0x5eff but only stored if cartdata() has been called. Colour format (gfx/screen) is 2 pixels per byte: low bits encode the left pixel of each pair. Map format is one byte per cel, where each byte normally encodes a sprite index.
 
 ```
-    peek addr
-    poke addr val
+peek addr
+poke addr val
 ```
 
 - Read and write one byte to an address in base ram.
@@ -1398,14 +1407,16 @@ User data has no particular meaning and can be used for anything via `memcpy()`,
 - Writing out of range causes a runtime error
 
 ```
-    peek2 addr
-    poke2 addr val
-    peek4 addr
-    poke4 addr val
+peek2 addr
+poke2 addr val
+peek4 addr
+poke4 addr val
 ```
+
 16-bit and 32-bit versions. Read and write one number (val) in little-endian format:
 
 **16 bit:** 0xffff.0000
+
 **32 bit:** 0xffff.ffff
 
 addr does not need to be aligned to 2 or 4-byte boundaries.
@@ -1414,9 +1425,9 @@ addr does not need to be aligned to 2 or 4-byte boundaries.
 Alternatively, the following operators can be used to peek (but not poke), and are slightly faster:
 
 ```
-        @ADDR  -- PEEK(ADDR)
-        %ADDR  -- PEEK2(ADDR)
-        $ADDR  -- PEEK4(ADDR)
+@ADDR  -- PEEK(ADDR)
+%ADDR  -- PEEK2(ADDR)
+$ADDR  -- PEEK4(ADDR)
 ```
 
 `memcpy dest_addr source_addr len`
@@ -1450,29 +1461,30 @@ Set len bytes to val (quite fast -- can use to draw unclipped horizonal scanline
 ## Math
 
 ```
-    max x y
-    min x y
-    mid x y z
+max x y
+min x y
+mid x y z
 ```
+
 Returns the maximum, minimum, or middle value of parameters. For example, mid(7,5,10) returns 7
 
 ```
-    flr  x
-    ceil x
+flr  x
+ceil x
 ```
 
 Returns the closest integer that is equal to or below / above x
 
 ```
-        ?flr ( 4.1) -->  4
-        ?ceil( 4.1) -->  5
-        ?flr (-2.3) --> -3
-        ?ceil(-2.3) --> -2
+?flr ( 4.1) -->  4
+?ceil( 4.1) -->  5
+?flr (-2.3) --> -3
+?ceil(-2.3) --> -2
 ```
 
 ```
-    cos x
-    sin x
+cos x
+sin x
 ```
 
 Returns the cosine of x, where 1.0 indicates a full turn sin is inverted to suit screenspace e.g. sin(0.25) returns -1
@@ -1514,8 +1526,8 @@ Bitwise operations are similar to logical expressions, except that they work at 
 
 Say you have two numbers (written here in binary using the "0b" prefix):
 ```
-            X = 0b1010
-            Y = 0b0110
+X = 0b1010
+Y = 0b0110
 ```
 
 A bitwise AND will give you bits set when the corresponding bits in X /and/ Y are both set
@@ -1581,12 +1593,12 @@ print(sub(s,5))  --> "quick brown fox"
 
 ### conversion
 ```
-        tostr(17)      -- returns "17"
-        tostr(17,true) -- returns "0x0011.0000"
-        tonum("17")    -- returns 17
-        chr(64)        -- returns "@"
-        ord("@")       -- returns 64
-        ord("123",2)   -- returns 50 (the second character: "2")
+tostr(17)      -- returns "17"
+tostr(17,true) -- returns "0x0011.0000"
+tonum("17")    -- returns 17
+chr(64)        -- returns "@"
+ord("@")       -- returns 64
+ord("123",2)   -- returns 50 (the second character: "2")
 ```
 
 ## Types
@@ -1622,9 +1634,9 @@ If you need more than 256 bytes, it is also possible to write directly to the ca
 Another alternative is to write directly to a second cartridge by specifying a fourth parameter to cstore(). This requires a cart swap (which in reality only means the user needs to watch a spinny cart animation for 1 second).
 
 ```
-        CSTORE(0,0,0x2000, "spritesheet.p8")
-        -- later:
-        RELOAD(0,0,0x2000, "spritesheet.p8") -- restore the saved data
+CSTORE(0,0,0x2000, "spritesheet.p8")
+-- later:
+RELOAD(0,0,0x2000, "spritesheet.p8") -- restore the saved data
 ```
 
 **cartdata id**
@@ -1632,9 +1644,9 @@ Another alternative is to write directly to a second cartridge by specifying a f
 `cartdata()` opens a permanent data storage slot indexed by id, that can be used to store and retrieve up to 256 bytes (64 numbers) worth of data using `DSET()` and `DGET()`.
 
 ```
-            CARTDATA("zep_dark_forest") -- can only be set once per session
-            -- later in the program..
-            DSET(0, score)
+CARTDATA("zep_dark_forest") -- can only be set once per session
+-- later in the program..
+DSET(0, score)
 ```
 
 id is a string up to 64 characters long, and should be unusual enough that other cartridges do not accidentally use the same id. e.g. cartdata(`zep_jelpi`)
@@ -1668,21 +1680,22 @@ GPIO means different things for different host platforms:
 CHIP and Raspberry Pi values are all digital: 0 (LOW) and 255 (HIGH)
 
 A simple program to blink any LEDs attached on and off:
+
 ```
-        t = 0
-        function _draw()
-         cls(5)
-         for i=0,7 do
-          val = 0
-          if (t % 2 < 1) val = 255
-          poke(0x5f80 + i, val)
-          circfill(20+i*12,64,4,val/11)
-         end
-         t += 0.1
-        end
+t = 0
+function _draw()
+cls(5)
+for i=0,7 do
+ val = 0
+ if (t % 2 < 1) val = 255
+  poke(0x5f80 + i, val)
+  circfill(20+i*12,64,4,val/11)
+ end
+ t += 0.1
+end
 ```
 
-## Serial
+##Serial
 
 For more precise timing, the `SERIAL()` command can be used. GPIO writes are buffered and dispatched at the end of each frame, allowing clock cycling at higher and/or more regular speeds than is possible by manually bit-banging using `POKE()` calls.
 
@@ -1703,19 +1716,19 @@ the PICO-8 memory location to read from (and subsequently write to in the case o
 
 Number of bytes to send. 1/8ths are allowed to send partial bit strings. For example, to send a byte one bit at a time to a typical APA102 LED string:
 ```
-            VAL = 42          -- value to send
-            DAT = 16 CLK = 15 -- data and clock pins depend on device
-            POKE(0x4300,0)    -- data to send (single bytes: 0 or 0xff)
-            POKE(0x4301,0xFF)
-            FOR B=0,7 DO
-                -- send the bit (high first)
-                SERIAL(DAT, BAND(VAL, SHL(1,7-B))>0 AND 0x4301 OR 0x4300, 1)
-                -- cycle the clock
-                SERIAL(CLK, 0x4301)
-                SERIAL(0xFF, 5) -- delay 5
-                SERIAL(CLK, 0x4300)
-                SERIAL(0xFF, 5) -- delay 5
-            END
+VAL = 42          -- value to send
+DAT = 16 CLK = 15 -- data and clock pins depend on device
+POKE(0x4300,0)    -- data to send (single bytes: 0 or 0xff)
+POKE(0x4301,0xFF)
+FOR B=0,7 DO
+ -- send the bit (high first)
+ SERIAL(DAT, BAND(VAL, SHL(1,7-B))>0 AND 0x4301 OR 0x4300, 1)
+ -- cycle the clock
+ SERIAL(CLK, 0x4301)
+ SERIAL(0xFF, 5) -- delay 5
+ SERIAL(CLK, 0x4300)
+ SERIAL(0xFF, 5) -- delay 5
+END
 ```
 
 ## HTML
@@ -1736,12 +1749,12 @@ Note that not every PICO-8 will have a keyboard or mouse attached to it, so when
 
 The state of the mouse and keyboard can be found in stat(x):
 ```
-        STAT(30) -- (Boolean) True when a keypress is available
-        STAT(31) -- (String) character returned by keyboard
-        STAT(32) -- Mouse X
-        STAT(33) -- Mouse Y
-        STAT(34) -- Mouse buttons (bitfield)
-        STAT(36) -- Mouse wheel event
+STAT(30) -- (Boolean) True when a keypress is available
+STAT(31) -- (String) character returned by keyboard
+STAT(32) -- Mouse X
+STAT(33) -- Mouse Y
+STAT(3 ) -- Mouse buttons (bitfield)
+STAT(36) -- Mouse wheel event
 ```
 
 
@@ -1757,16 +1770,16 @@ For more information, please refer to the Lua 5.2 manual.
 Metatables can be used to define the behaviour of objects under particular operations. For example, to use tables to represent 2D vectors that can be added together, the `+` operator is redefined by defining an `__add` function for the metatable:
 
 ```
-            vec2d={
-             __add=function(a,b)
-                 return {x=(a.x+b.x), y=(a.y+b.y)}
-             end
-            }
+vec2d={
+ __add=function(a,b)
+ return {x=(a.x+b.x), y=(a.y+b.y)}
+ end
+}
 
-            v1={x=2,y=9} setmetatable(v1, vec2d)
-            v2={x=1,y=5} setmetatable(v2, vec2d)
-            v3 = v1+v2
-            print(v3.x..","..v3.y) -- 3,14
+v1={x=2,y=9} setmetatable(v1, vec2d)
+v2={x=1, =5} setmetatable(v2, vec2d)
+v3 = v1+v2
+print(v3.x..","..v3.y) -- 3,14
 ```
 
 `setmetatable t, m`
@@ -1779,32 +1792,31 @@ set table t metatable to m
 return the current metatable for table t, or nil if none is set
 
 ```
-        rawset t key value
-        rawget t key
-        rawequal t1 t2
-        rawlen t
+rawset t key value
+rawget t key
+rawequal t1 t2
+rawlen t
 ```
 
 raw access to the table, as if no metamethods were defined
 
-### Function Arguments
-
+### Function Arguments 
 The list of function arguments (or remain arguments) can be specified with ...
 
 ```
-            function preprint(pre, s, ...)
-                local s2 = pre..tostr(s)
-                print(s2, ...) -- pass the remaining arguments on to print()
-            end
+function preprint(pre, s, ...)
+ local s2 = pre..tostr(s)
+ print(s2, ...) -- pass the remaining arguments on to print()
+end
 ```
 
 To accept a variable number of arguments:
 
 ```
-            function foo(...)
-                local args={...} -- becomes a table of arguments
-                foreach(args,print)
-            end
+function foo(...)
+ local args={...} -- becomes a table of arguments
+ foreach(args,print)
+end
 ```
 
 ### Coroutines
@@ -1812,23 +1824,22 @@ To accept a variable number of arguments:
 Coroutines offer a way to run different parts of a program in a somewhat concurrent way, similar to threads. A function can be called as a coroutine, suspended with `yield()` any number of times, and then resumed again at the same points.
 
 ```
-            function hey()
-                print("doing something")
-                yield()
-                print("doing the next thing")
-                yield()
-                print("finished")
-            end
+function hey()
+ print("doing something")
+ yield()
+ print("doing the next thing")
+ yield()
+ print("finished")
+end
 
-            c = cocreate(hey)
-            for i=1,3 do coresume(c) end
+c = cocreate(hey)
+for i=1,3 do coresume(c) end
 ```
 
 `cocreate f`
 
 Create a coroutine for function f.
-
-`coresume c [p0 p1 ..]`
+  coresume c [p0 p1 ..]`
 
 Run or continue the coroutine c. Parameters p0, p1.. are passed to the coroutine's function.
 
