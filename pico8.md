@@ -37,53 +37,52 @@ The harsh limitations of PICO-8 are carefully chosen to be fun to work with, enc
 
 ## Specs
 
-**Display:** 128x128, fixed 16 colour palette
-**Input:** 6-button controllers
-**Cartridge size**: 32k
-**Sound:** 4 channel, 64 definable chip blerps
-**Code:** Lua (max 8192 tokens of code)
-**Sprites:** Single bank of 128 8x8 sprites (+128 shared)
-**Map:** 128x32 8-bit cells (+128x32 shared)
-
+- **Display:** 128x128, fixed 16 colour palette
+- **Input:** 6-button controllers
+- **Cartridge size**: 32k
+- **Sound:** 4 channel, 64 definable chip blerps
+- **Code:** Lua (max 8192 tokens of code)
+- **Sprites:** Single bank of 128 8x8 sprites (+128 shared)
+- **Map:** 128x32 8-bit cells (+128x32 shared)
 
 ## Hello World
 
 After PICO-8 boots, try typing some of these commands followed by enter:
 ```
-        PRINT("HELLO WORLD")
-        RECTFILL(80,80,120,100,12)
-        CIRCFILL(70,90,20,14)
-        FOR I=1,4 DO PRINT(I) END
-    ```
+PRINT("HELLO WORLD")
+RECTFILL(80,80,120,100,12)
+CIRCFILL(70,90,20,14)
+FOR I=1,4 DO PRINT(I) END
+```
+
 (Note: PICO-8 only displays upper-case characters -- just type normally without capslock!)
 
 You can build up an interactive program by using commands like this in the code editing mode along with two special callback functions `_UPDATE` and `_DRAW`. For example, the following program allows you to move a circle around with the cursor keys. Press `Esc` to switch to the code editor and type or copy & paste the following code:
 
 ```
-    X = 64  Y = 64
-    FUNCTION _UPDATE()
-     IF (BTN(0)) THEN X=X-1 END
-     IF (BTN(1)) THEN X=X+1 END
-     IF (BTN(2)) THEN Y=Y-1 END
-     IF (BTN(3)) THEN Y=Y+1 END
-    END
+X = 64  Y = 64
+FUNCTION _UPDATE()
+ IF (BTN(0)) THEN X=X-1 END
+ IF (BTN(1)) THEN X=X+1 END
+ IF (BTN(2)) THEN Y=Y-1 END
+ IF (BTN(3)) THEN Y=Y+1 END
+END
 
-    FUNCTION _DRAW()
-     CLS(5)
-     CIRCFILL(X,Y,7,14)
-    END
+FUNCTION _DRAW()
+ CLS(5)
+ CIRCFILL(X,Y,7,14)
+END
 ```
 
 Now press `Esc` to return to the console and type `RUN` (or press `CTRL-R`) to see it in action. Please refer to the demo cartridges for more complex programs (type `INSTALL_DEMOS`).
 
 If you want to store your program for later, use the `SAVE` command:
 
-    `> SAVE PINKCIRC`
+`> SAVE PINKCIRC`
 
 And to load it again:
 
-    `> LOAD PINKCIRC`
-
+`> LOAD PINKCIRC`
 
 ## Example Cartridges
 
