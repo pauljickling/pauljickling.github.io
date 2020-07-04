@@ -3,3 +3,5 @@ _site/
 .git/
 drafts/
 technical_articles.md
+jekyll/
+.ruby-version
