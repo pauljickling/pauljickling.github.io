@@ -1210,7 +1210,9 @@ END
 FOREACH(A, PRINT) -- 10,11,12
 PRINT(A[3])       -- 12
 ```
-all t`
+
+`all t`
+
 Used in `FOR` loops to iterate over all items in a table (that have a 1-based integer index), in the order they were added.
 
 ```
