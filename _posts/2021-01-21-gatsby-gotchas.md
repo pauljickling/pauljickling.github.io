@@ -24,6 +24,6 @@ If you need to use the `document` or `window` objects in Gatsby you will need to
 
 This isn't Gatsby specific, but the Gatsby tutorial does push developers towards CSS solutions like CSS modules, and CSS-in-JS, so I figured I would mention this tip as well. You can give yourself a lot of flexibility and control over how you style components by concatenating the classnames with string interpolation. The syntax will look something like:
 
-`<div className={`${css.foo} ${backgroundClass}`}`
+`<div className={`${css.foo} ${backgroundClass}`}>`
 
 Then you can define these values elsewhere so your css classes can change based on the state of your app. This is a very powerful technique!
