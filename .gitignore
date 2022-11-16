@@ -5,3 +5,4 @@ drafts/
 technical_articles.md
 jekyll/
 .ruby-version
+.DS_Store
