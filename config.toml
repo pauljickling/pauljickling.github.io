@@ -1,8 +1,0 @@
-baseURL = 'https://semitext.xyz'
-languageCode = 'en-us'
-title = 'music, zines, flow'
-theme = "terminal-cookbook"
-
-[params]
-noindex = false
-custom_css = ["main.css"]
