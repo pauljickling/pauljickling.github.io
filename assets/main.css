@@ -81,16 +81,6 @@ ul.post-list {
 
 /* Navigation */
 
-nav {
-  display: flex;
-  list-style: none;
-}
-
-li.nav {
-  padding: 5px;
-  font-size: 18px;
-}
-
 a.nav {
   text-decoration: none;
   color: black;
@@ -237,7 +227,7 @@ p.rss-subscribe {
   animation-name: intro1;
 }
 
-span#name {
+span#website {
   font-size: 32px;
   position: absolute;
   left: 5px;
@@ -256,7 +246,7 @@ span#name {
   animation-name: intro2;
 }
 
-span#email {
+a#bsky {
   font-size: 16px;
   position: absolute;
   left: 20px;
@@ -272,6 +262,13 @@ span#email {
   z-index: 3;
   animation-duration: 3s;
   animation-name: intro3;
+}
+
+a#bandcamp {
+  font-size: 16px;
+  position: absolute;
+  left: 20px;
+  bottom: 5.5px;
 }
 
 #line4 {
