@@ -46,9 +46,9 @@ provider "aws" {
   region = "us-east-1"
 }
 
-# resource "aws_key_pair" "my_instance_key" {
-#  key_name   = "my_ssh_key"
-#}
+resource "aws_key_pair" "my_instance_key" {
+  key_name   = "my_ssh_key"
+}
 
 resource "aws_vpc" "my_instance_vpc" {
   cidr_block           = "10.0.0.0/16"
