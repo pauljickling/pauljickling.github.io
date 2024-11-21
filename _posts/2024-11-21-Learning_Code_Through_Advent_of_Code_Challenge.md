@@ -1,0 +1,17 @@
+---
+layout: post
+date: 2024-11-21
+title: "Learning Code Through the Advent of Code Challenge"
+---
+Unless a programming language is so fundamentally different from what you already know, nothing is as hard as learning your first language. However even when so many of the concepts are transferrable to another language, it can still be tricky to stick with the new language if you aren't forced to use it professionally. Certainly that was my experience when I started dabbling in Go. There wasn't anything about Go that was totally unfamiliar from other languages I had learned. But because I wasn't using it daily, I'd forget various details about how it worked, and this would end up creating various points of friction as I tried to remember how to do basic things like perform various string operations, or how the different aggregate and reference types worked. Before I knew it, I would be back to writing things in Python or Rust.
+
+This year I'm trying a different approach, and working on [Advent of Code](https://adventofcode.com) puzzles in Go to see if the language becomes more sticky by the end of it. This is not a novel idea of mine or anything, I've seen plenty of people pick up a new language this way, but since I'm trying it now I'm blogging about it :-P
+
+Advent of Code has a couple of nice features that make it attractive as a method for learning a new language:
+
+1. It's a daily exercise. Much like learning a human language, you benefit from spending a small amount of time every day working in a programming language, rather than spending a large chunk of time but only once a week.
+2. Puzzles will require you to engage with different aspects of a language. Working on a toy project you might only utilize a small slice of what a language is capable of (that was certainly my experience with doing a project in Rust). Solving difficult puzzles on the other hand will incentivize you to pick up more features of a language to solve hard problems.
+3. No matter what are the particular features of a puzzle, there are certain baseline features that you will need to know how to do to solve them. For example, they all involve a raw input file that you will most likely save on your computer as an input.txt file. That means you will need to know how to open and read files in your language, you'll also likely need to perform operations like converting strings to numbers, breaking strings into various substrings, parse unicode, utilize some of the std lib, and do some basic error handling. This is all good stuff.
+4. The puzzles are divided into two parts, with the second part built off of the first part, but complicating it in some way. This encourages you to write your code in a way where everything is easy to reuse or discard. e.g. lots of small, composable functions. It's always satisfying when you've structured your code in a way where to solve the 2nd part all that is needed is maybe a few tiny adjustments and maybe an additional function.
+
+For now I'm working through some of last year's problems until it starts up this year. Historically I haven't finished the full month of challenges. They usually get to a certain level of complexity where I find it hard to justify the time to complete them towards the end of the month. Regardless of how far I get though, I hope by the end of this month I'll have marinaded enough in Go that it sticks with it, and becomes another language in my toolbelt.
