@@ -21,7 +21,7 @@ date: $DATE
 title: \"$TITLE\"
 ---"
 
-TITLE_PATH="${TITLE// /_}"
+TITLE_PATH="${TITLE// /-}"
 # Assign file path
 FILE_PATH="_posts/$DATE-$TITLE_PATH.md"
 
